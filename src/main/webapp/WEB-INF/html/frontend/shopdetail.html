@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>shop detail</title>
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="stylesheet"
+          href="../resources/css/common/sm.min.css">
+    <link rel="stylesheet"
+          href="../resources/css/common/sm-extend.min.css">
+    <link rel="stylesheet" href="../resources/css/frontend/shopdetail.css">
+</head>
+<body>
+<div class="page-group">
+    <div class="page">
+        <header class="bar bar-nav">
+            <a class="button button-link button-nav pull-left" external href="#"
+               onClick="javascript :history.back(-1);" data-transition='slide-out'>
+                <span class="icon icon-left"></span> back
+            </a>
+            <h1 class="title" id="shop-name">shop detail</h1>
+
+        </header>
+        <nav class="bar bar-tab">
+            <a class="tab-item" href="/communityApp/frontend/index" external> <span
+                    class="icon icon-home"></span> <span class="tab-label">home</span>
+            </a> <a class="tab-item" href="#" id="me"> <span
+                class="icon icon-me"></span> <span class="tab-label">personal</span>
+        </a>
+        </nav>
+        <div class="content infinite-scroll infinite-scroll-bottom"
+             data-distance="100">
+            <!-- 这里是页面内容区 -->
+            <div class="shop-detail-dev">
+                <div class="card">
+                    <div valign="bottom"
+                         class="card-header color-white no-border no-padding">
+                        <img class='card-cover' id="shop-cover-pic" src="" alt="">
+                    </div>
+                    <div class="card-content">
+                        <div class="card-content-inner">
+                            <p class="color-gray">
+                                <span id="shop-update-time"></span>
+                            </p>
+                            <p id="shop-desc"></p>
+                        </div>
+                    </div>
+                    <div class="card-footer">
+                        <span id="shop-addr"></span> <span id="shop-phone"></span>
+                    </div>
+                </div>
+            </div>
+            <!-- 商品类别列表展示区 -->
+            <div class="shopdetail-button-div" id="shopdetail-button-div">
+
+            </div>
+            <!-- 商品名字搜索区 -->
+            <div class="detail-search">
+                <div class="searchbar">
+                    <a class="searchbar-cancel">cancel</a>
+                    <div class="search-input">
+                        <label class="icon icon-search" for="search"></label> <input
+                            type="search" id='search' placeholder='keywords'/>
+                    </div>
+                </div>
+            </div>
+            <!-- 商品列表展示区 -->
+            <div class="list-div">
+
+            </div>
+            <div class="infinite-scroll-preloader">
+                <div class="preloader"></div>
+            </div>
+        </div>
+    </div>
+
+    <!--侧边栏  -->
+    <div class="panel-overlay"></div>
+    <div class="panel panel-right panel-reveal" id="panel-right-demo">
+        <div class="content-block">
+            <p>
+                <a href="/communityApp/local/accountbind?usertype=1" class="close-panel">alternative account</a>
+            </p>
+            <p>
+                <a href="/communityApp/local/changepsw?usertype=1" class="close-panel">modify password</a>
+            </p>
+            <p>
+                <a href="/communityApp/frontend/myrecord" class="close-panel">your orders</a>
+            </p>
+            <p>
+                <a href="/communityApp/frontend/mypoint" class="close-panel">your points</a>
+            </p>
+            <p>
+                <a href="/communityApp/frontend/pointrecord" class="close-panel">point record</a>
+            </p>
+            <p>
+                <a href="#" usertype="1" class="close-panel" id="log-out">log out</a>
+            </p>
+            <!-- Click on link with "close-panel" class will close panel -->
+        </div>
+    </div>
+</div>
+
+
+<script type='text/javascript'
+        src='../resources/js/common/zepto.min.js' charset='utf-8'></script>
+<script type='text/javascript'
+        src='../resources/js/common/sm.min.js' charset='utf-8'></script>
+<script type='text/javascript'
+        src='../resources/js/common/sm-extend.min.js' charset='utf-8'></script>
+<script type='text/javascript' src='../resources/js/common/common.js'
+        charset='utf-8'></script>
+<script type='text/javascript'
+        src='../resources/js/frontend/shopdetail.js' charset='utf-8'></script>
+
+</body>
+</html>

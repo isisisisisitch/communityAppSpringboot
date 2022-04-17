@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<title>product edit</title>
+<meta name="viewport" content="initial-scale=1, maximum-scale=1">
+<link rel="shortcut icon" href="/favicon.ico">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<link rel="stylesheet"
+	href="../resources/css/common/sm.min.css">
+<link rel="stylesheet"
+	href="../resources/css/common/sm-extend.min.css">
+<link rel="stylesheet"
+	href="../resources/css/shop/productmanagement.css">
+</head>
+<body>
+	<header class="bar bar-nav">
+		<h1 class="title">product edit</h1>
+	</header>
+	<div class="content">
+		<div class="list-block">
+			<ul>
+				<li>
+					<div class="item-content">
+						<div class="item-media">
+							<i class="icon icon-form-name"></i>
+						</div>
+						<div class="item-inner">
+							<div class="item-title label">product name</div>
+							<div class="item-input">
+								<input type="text" id="product-name" placeholder="product name">
+							</div>
+						</div>
+					</div>
+				</li>
+				<li>
+					<div class="item-content">
+						<div class="item-media">
+							<i class="icon icon-form-email"></i>
+						</div>
+						<div class="item-inner">
+							<div class="item-title label">category</div>
+							<div class="item-input">
+								<select id="category">
+								</select>
+							</div>
+						</div>
+					</div>
+				</li>
+				<li>
+					<div class="item-content">
+						<div class="item-media">
+							<i class="icon icon-form-email"></i>
+						</div>
+						<div class="item-inner">
+							<div class="item-title label">priority</div>
+							<div class="item-input">
+								<input type="number" id="priority">
+							</div>
+						</div>
+					</div>
+				</li>
+				<li>
+					<div class="item-content">
+						<div class="item-media">
+							<i class="icon icon-form-email"></i>
+						</div>
+						<div class="item-inner">
+							<div class="item-title label">point</div>
+							<div class="item-input">
+								<input type="number" id="point">
+							</div>
+						</div>
+					</div>
+				</li>				
+				<li>
+					<div class="item-content">
+						<div class="item-media">
+							<i class="icon icon-form-email"></i>
+						</div>
+						<div class="item-inner">
+							<div class="item-title label">price</div>
+							<div class="item-input">
+								<input type="number" id="normal-price">
+							</div>
+						</div>
+					</div>
+				</li>
+				<li>
+					<div class="item-content">
+						<div class="item-media">
+							<i class="icon icon-form-email"></i>
+						</div>
+						<div class="item-inner">
+							<div class="item-title label">promotion price</div>
+							<div class="item-input">
+								<input type="number" id="promotion-price">
+							</div>
+						</div>
+					</div>
+				</li>
+
+				<li>
+					<div class="item-content">
+						<div class="item-media">
+							<i class="icon icon-form-email"></i>
+						</div>
+						<div class="item-inner">
+							<div class="item-title label">img</div>
+							<div class="item-input">
+								<input type="file" id="small-img">
+							</div>
+						</div>
+					</div>
+				</li>
+				<li>
+					<div class="item-content">
+						<div class="item-media">
+							<i class="icon icon-form-email"></i>
+						</div>
+						<div class="item-inner detail-img-div">
+							<div class="item-title label">detail img</div>
+							<div class="item-input" id="detail-img">
+								<input type="file" class="detail-img">
+							</div>
+						</div>
+					</div>
+				</li>
+				<li>
+					<div class="item-content">
+						<div class="item-media">
+							<i class="icon icon-form-email"></i>
+						</div>
+						<div class="item-inner">
+							<div class="item-title label">product desc</div>
+							<div class="item-input">
+								<textarea id="product-desc"></textarea>
+							</div>
+						</div>
+					</div>
+				</li>
+				<li>
+					<div class="item-content">
+						<div class="item-media">
+							<i class="icon icon-form-email"></i>
+						</div>
+						<div class="item-inner">
+							<label for="j_captcha" class="item-title label">captcha</label> <input
+								id="j_captcha" name="j_captcha" type="text"
+								class="form-control in" />
+							<div class="item-input">
+								<img id="captcha_img" alt="change" title="change"
+									onclick="changeVerifyCode(this)" src="../Kaptcha" />
+							</div>
+						</div>
+					</div>
+				</li>
+
+			</ul>
+		</div>
+		<div class="content-block">
+			<div class="row">
+				<div class="col-50">
+					<a href="/communityApp/shopadmin/productmanagement"
+						class="button button-big button-fill button-danger" id="back">back</a>
+				</div>
+				<div class="col-50">
+					<a href="#" class="button button-big button-fill" id="submit">submit</a>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+
+	<script type='text/javascript'
+		src='../resources/js/common/zepto.min.js' charset='utf-8'></script>
+	<script type='text/javascript'
+		src='../resources/js/common/sm.min.js' charset='utf-8'></script>
+	<script type='text/javascript'
+		src='../resources/js/common/sm-extend.min.js' charset='utf-8'></script>
+	<script type='text/javascript' src='../resources/js/common/common.js'
+		charset='utf-8'></script>
+	<script type='text/javascript'
+		src='../resources/js/shop/productoperation.js' charset='utf-8'></script>
+</body>
+</html>

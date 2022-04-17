@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<title>urban life</title>
+<meta name="viewport" content="initial-scale=1, maximum-scale=1">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<link rel="stylesheet"
+	href="../resources/css/common/sm.min.css">
+<link rel="stylesheet"
+	href="../resources/css/common/sm-extend.min.css">
+<link rel="stylesheet" href="../resources/css/frontend/index.css">
+</head>
+<body>
+	<div class="page-group">
+		<div class="page">
+			<header class="bar bar-nav">
+				<h1 class="title">Urban life</h1>
+			</header>
+			<nav class="bar bar-tab">
+				<a class="tab-item active" href="#"> <span
+					class="icon icon-home"></span> <span class="tab-label">home</span>
+				</a> <a class="tab-item" href="#" id='me'> <span
+					class="icon icon-me"></span> <span class="tab-label">personal</span>
+				</a>
+			</nav>
+			<div class="content">
+				<!-- 这里是轮播图展示区 -->
+				<div class="swiper-container index-banner" data-space-between='10'>
+					<div class="swiper-wrapper">
+					</div>
+					<div class="swiper-pagination"></div>
+				</div>
+				<!-- 全类查询区 -->
+				<div class='total-shop-button'>
+					<a href="/communityApp/frontend/shoplist" external>all shops</a>
+				</div>
+				<!-- 一级类别展示区域 -->
+				<div class="row">
+				</div>
+			</div>
+		</div>
+		<!--侧边栏  -->
+		<div class="panel-overlay"></div>
+		<div class="panel panel-right panel-reveal" id="panel-right-demo">
+			<div class="content-block">
+				<p>
+					<a href="/communityApp/local/accountbind?usertype=1" class="close-panel">alternative account</a>
+				</p>
+				<p>
+					<a href="/communityApp/local/changepsw?usertype=1" class="close-panel">modify password</a>
+				</p>
+				<p>
+					<a href="/communityApp/frontend/myrecord" class="close-panel">your orders</a>
+				</p>
+				<p>
+					<a href="/communityApp/frontend/mypoint" class="close-panel">your points</a>
+				</p>
+				<p>
+					<a href="/communityApp/frontend/pointrecord" class="close-panel">point record</a>
+				</p>
+				<p>
+					<a href="#" usertype="1" class="close-panel" id="log-out">log out</a>
+				</p>
+
+			</div>
+		</div>
+	</div>
+
+
+
+	<script type='text/javascript'
+		src='../resources/js/common/zepto.min.js' charset='utf-8'></script>
+	<script type='text/javascript'
+		src='../resources/js/common/sm.min.js' charset='utf-8'></script>
+	<script type='text/javascript'
+		src='../resources/js/common/sm-extend.min.js' charset='utf-8'></script>
+	<script type='text/javascript' src='../resources/js/frontend/index.js'
+		charset='utf-8'></script>
+</body>
+</html>
