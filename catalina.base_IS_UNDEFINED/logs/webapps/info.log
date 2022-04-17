@@ -1,0 +1,9 @@
+2022-04-17 16:25:33.555 [main] INFO  ca.bytetube.communityApp.CommunityappApplication - Starting CommunityappApplication using Java 1.8.0_241 on dalluos-mbp with PID 4351 (/Users/dalluo/Desktop/IdeaProjects/communityApp/target/classes started by dal in /Users/dalluo/Desktop/IdeaProjects/communityApp)
+2022-04-17 16:25:33.557 [main] INFO  ca.bytetube.communityApp.CommunityappApplication - No active profile set, falling back to 1 default profile: "default"
+2022-04-17 16:25:35.084 [main] INFO  ca.bytetube.communityApp.CommunityappApplication - Started CommunityappApplication in 1.789 seconds (JVM running for 2.279)
+2022-04-17 16:36:55.862 [main] INFO  ca.bytetube.communityApp.CommunityappApplication - Starting CommunityappApplication using Java 1.8.0_241 on dalluos-mbp with PID 4468 (/Users/dalluo/Desktop/IdeaProjects/communityApp/target/classes started by dal in /Users/dalluo/Desktop/IdeaProjects/communityApp)
+2022-04-17 16:36:55.864 [main] INFO  ca.bytetube.communityApp.CommunityappApplication - No active profile set, falling back to 1 default profile: "default"
+2022-04-17 16:36:57.293 [main] INFO  ca.bytetube.communityApp.CommunityappApplication - Started CommunityappApplication in 1.696 seconds (JVM running for 2.169)
+2022-04-17 16:46:43.678 [main] INFO  ca.bytetube.communityApp.dao.AreaDaoTest - Starting AreaDaoTest using Java 1.8.0_241 on dalluos-mbp with PID 4603 (started by dal in /Users/dalluo/Desktop/IdeaProjects/communityApp)
+2022-04-17 16:46:43.680 [main] INFO  ca.bytetube.communityApp.dao.AreaDaoTest - No active profile set, falling back to 1 default profile: "default"
+2022-04-17 16:46:46.042 [main] INFO  ca.bytetube.communityApp.dao.AreaDaoTest - Started AreaDaoTest in 2.604 seconds (JVM running for 3.461)

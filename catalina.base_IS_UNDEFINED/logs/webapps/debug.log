@@ -1,0 +1,6 @@
+2022-04-17 16:25:33.557 [main] DEBUG ca.bytetube.communityApp.CommunityappApplication - Running with Spring Boot v2.6.6, Spring v5.3.18
+2022-04-17 16:36:55.863 [main] DEBUG ca.bytetube.communityApp.CommunityappApplication - Running with Spring Boot v2.6.6, Spring v5.3.18
+2022-04-17 16:46:43.679 [main] DEBUG ca.bytetube.communityApp.dao.AreaDaoTest - Running with Spring Boot v2.6.6, Spring v5.3.18
+2022-04-17 16:46:47.086 [main] DEBUG ca.bytetube.communityApp.dao.AreaDao.queryArea - ==>  Preparing: SELECT area_id, area_name, priority, create_time, last_edit_time FROM tb_area ORDER BY priority DESC
+2022-04-17 16:46:47.116 [main] DEBUG ca.bytetube.communityApp.dao.AreaDao.queryArea - ==> Parameters: 
+2022-04-17 16:46:47.180 [main] DEBUG ca.bytetube.communityApp.dao.AreaDao.queryArea - <==      Total: 8
