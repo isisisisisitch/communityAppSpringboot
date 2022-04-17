@@ -7,3 +7,17 @@
 2022-04-17 16:46:43.678 [main] INFO  ca.bytetube.communityApp.dao.AreaDaoTest - Starting AreaDaoTest using Java 1.8.0_241 on dalluos-mbp with PID 4603 (started by dal in /Users/dalluo/Desktop/IdeaProjects/communityApp)
 2022-04-17 16:46:43.680 [main] INFO  ca.bytetube.communityApp.dao.AreaDaoTest - No active profile set, falling back to 1 default profile: "default"
 2022-04-17 16:46:46.042 [main] INFO  ca.bytetube.communityApp.dao.AreaDaoTest - Started AreaDaoTest in 2.604 seconds (JVM running for 3.461)
+2022-04-17 17:22:43.935 [main] INFO  ca.bytetube.communityApp.service.AreaServiceTest - Starting AreaServiceTest using Java 1.8.0_241 on dalluos-mbp with PID 5082 (started by dal in /Users/dalluo/Desktop/IdeaProjects/communityApp)
+2022-04-17 17:22:43.937 [main] INFO  ca.bytetube.communityApp.service.AreaServiceTest - No active profile set, falling back to 1 default profile: "default"
+2022-04-17 17:27:29.443 [main] INFO  ca.bytetube.communityApp.service.AreaServiceTest - Starting AreaServiceTest using Java 1.8.0_241 on dalluos-mbp with PID 5100 (started by dal in /Users/dalluo/Desktop/IdeaProjects/communityApp)
+2022-04-17 17:27:29.444 [main] INFO  ca.bytetube.communityApp.service.AreaServiceTest - No active profile set, falling back to 1 default profile: "default"
+2022-04-17 17:28:42.945 [main] INFO  ca.bytetube.communityApp.service.AreaServiceTest - Starting AreaServiceTest using Java 1.8.0_241 on dalluos-mbp with PID 5107 (started by dal in /Users/dalluo/Desktop/IdeaProjects/communityApp)
+2022-04-17 17:28:42.946 [main] INFO  ca.bytetube.communityApp.service.AreaServiceTest - No active profile set, falling back to 1 default profile: "default"
+2022-04-17 17:38:23.055 [main] INFO  ca.bytetube.communityApp.service.AreaServiceTest - Starting AreaServiceTest using Java 1.8.0_241 on dalluos-mbp with PID 5134 (started by dal in /Users/dalluo/Desktop/IdeaProjects/communityApp)
+2022-04-17 17:38:23.057 [main] INFO  ca.bytetube.communityApp.service.AreaServiceTest - No active profile set, falling back to 1 default profile: "default"
+2022-04-17 17:40:23.372 [main] INFO  ca.bytetube.communityApp.service.AreaServiceTest - Starting AreaServiceTest using Java 1.8.0_241 on dalluos-mbp with PID 5148 (started by dal in /Users/dalluo/Desktop/IdeaProjects/communityApp)
+2022-04-17 17:40:23.374 [main] INFO  ca.bytetube.communityApp.service.AreaServiceTest - No active profile set, falling back to 1 default profile: "default"
+2022-04-17 17:40:25.481 [main] INFO  ca.bytetube.communityApp.service.AreaServiceTest - Started AreaServiceTest in 2.353 seconds (JVM running for 3.099)
+2022-04-17 17:40:47.353 [main] INFO  ca.bytetube.communityApp.service.AreaServiceTest - Starting AreaServiceTest using Java 1.8.0_241 on dalluos-mbp with PID 5152 (started by dal in /Users/dalluo/Desktop/IdeaProjects/communityApp)
+2022-04-17 17:40:47.354 [main] INFO  ca.bytetube.communityApp.service.AreaServiceTest - No active profile set, falling back to 1 default profile: "default"
+2022-04-17 17:40:49.375 [main] INFO  ca.bytetube.communityApp.service.AreaServiceTest - Started AreaServiceTest in 2.31 seconds (JVM running for 3.168)

@@ -4,3 +4,15 @@
 2022-04-17 16:46:47.086 [main] DEBUG ca.bytetube.communityApp.dao.AreaDao.queryArea - ==>  Preparing: SELECT area_id, area_name, priority, create_time, last_edit_time FROM tb_area ORDER BY priority DESC
 2022-04-17 16:46:47.116 [main] DEBUG ca.bytetube.communityApp.dao.AreaDao.queryArea - ==> Parameters: 
 2022-04-17 16:46:47.180 [main] DEBUG ca.bytetube.communityApp.dao.AreaDao.queryArea - <==      Total: 8
+2022-04-17 17:22:43.936 [main] DEBUG ca.bytetube.communityApp.service.AreaServiceTest - Running with Spring Boot v2.6.6, Spring v5.3.18
+2022-04-17 17:27:29.443 [main] DEBUG ca.bytetube.communityApp.service.AreaServiceTest - Running with Spring Boot v2.6.6, Spring v5.3.18
+2022-04-17 17:28:42.945 [main] DEBUG ca.bytetube.communityApp.service.AreaServiceTest - Running with Spring Boot v2.6.6, Spring v5.3.18
+2022-04-17 17:38:23.055 [main] DEBUG ca.bytetube.communityApp.service.AreaServiceTest - Running with Spring Boot v2.6.6, Spring v5.3.18
+2022-04-17 17:40:23.373 [main] DEBUG ca.bytetube.communityApp.service.AreaServiceTest - Running with Spring Boot v2.6.6, Spring v5.3.18
+2022-04-17 17:40:27.075 [main] DEBUG ca.bytetube.communityApp.dao.AreaDao.queryArea - ==>  Preparing: SELECT area_id, area_name, priority, create_time, last_edit_time FROM tb_area ORDER BY priority DESC
+2022-04-17 17:40:27.100 [main] DEBUG ca.bytetube.communityApp.dao.AreaDao.queryArea - ==> Parameters: 
+2022-04-17 17:40:27.155 [main] DEBUG ca.bytetube.communityApp.dao.AreaDao.queryArea - <==      Total: 8
+2022-04-17 17:40:47.354 [main] DEBUG ca.bytetube.communityApp.service.AreaServiceTest - Running with Spring Boot v2.6.6, Spring v5.3.18
+2022-04-17 17:40:50.769 [main] DEBUG ca.bytetube.communityApp.dao.AreaDao.queryArea - ==>  Preparing: SELECT area_id, area_name, priority, create_time, last_edit_time FROM tb_area ORDER BY priority DESC
+2022-04-17 17:40:50.795 [main] DEBUG ca.bytetube.communityApp.dao.AreaDao.queryArea - ==> Parameters: 
+2022-04-17 17:40:50.849 [main] DEBUG ca.bytetube.communityApp.dao.AreaDao.queryArea - <==      Total: 8
