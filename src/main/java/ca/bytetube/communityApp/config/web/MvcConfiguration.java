@@ -1,6 +1,8 @@
 package ca.bytetube.communityApp.config.web;
 
 
+import ca.bytetube.communityApp.interceptor.shopadmin.ShopLoginInterceptor;
+import ca.bytetube.communityApp.interceptor.shopadmin.ShopPermissionInterceptor;
 import com.google.code.kaptcha.servlet.KaptchaServlet;
 import org.springframework.beans.BeansException;
 import org.springframework.beans.factory.annotation.Value;
@@ -126,6 +128,37 @@ public class MvcConfiguration implements WebMvcConfigurer, ApplicationContextAwa
         return servlet;
     }
 
+    /**
+     * 添加拦截器配置
+     */
+    @Override
+    public void addInterceptors(InterceptorRegistry registry) {
+        /** 店家管理系统拦截部分 **/
+        String interceptPath = "/shopadmin/**";
+        // 注册拦截器
+        InterceptorRegistration loginIR = registry.addInterceptor(new ShopLoginInterceptor());
+        // 配置拦截的路径
+        loginIR.addPathPatterns(interceptPath);
+
+        // 还可以注册其它的拦截器
+        InterceptorRegistration permissionIR = registry.addInterceptor(new ShopPermissionInterceptor());
+        // 配置拦截的路径
+        permissionIR.addPathPatterns(interceptPath);
+        // 配置不拦截的路径
+        /** shoplist page **/
+        permissionIR.excludePathPatterns("/shopadmin/shoplist");
+        permissionIR.excludePathPatterns("/shopadmin/getshoplist");
+        /** shopregister page **/
+        permissionIR.excludePathPatterns("/shopadmin/getshopinitinfo");
+        permissionIR.excludePathPatterns("/shopadmin/registershop");
+        permissionIR.excludePathPatterns("/shopadmin/shopoperation");
+        /** shopmanage page **/
+        permissionIR.excludePathPatterns("/shopadmin/shopmanagement");
+        permissionIR.excludePathPatterns("/shopadmin/getshopmanagementinfo");
+        /** shopauthmanagement page **/
+        permissionIR.excludePathPatterns("/shopadmin/addshopauthmap");
+
+    }
 
 
 }

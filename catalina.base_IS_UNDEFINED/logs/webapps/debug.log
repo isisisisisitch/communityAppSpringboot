@@ -121,3 +121,4 @@
 2022-04-20 11:21:16.088 [http-nio-8080-exec-3] DEBUG c.b.c.dao.ShopCategoryDao.queryShopCategory - ==>  Preparing: SELECT shop_category_id, shop_category_name, shop_category_desc, shop_category_img, priority, create_time, last_edit_time, parent_id FROM tb_shop_category WHERE parent_id is null ORDER BY priority DESC
 2022-04-20 11:21:16.089 [http-nio-8080-exec-3] DEBUG c.b.c.dao.ShopCategoryDao.queryShopCategory - ==> Parameters: 
 2022-04-20 11:21:16.128 [http-nio-8080-exec-3] DEBUG c.b.c.dao.ShopCategoryDao.queryShopCategory - <==      Total: 8
+2022-04-20 11:29:54.245 [main] DEBUG ca.bytetube.communityApp.CommunityappApplication - Running with Spring Boot v2.6.6, Spring v5.3.18
