@@ -31,3 +31,18 @@
 2022-04-20 15:29:01.898 [main] INFO  c.b.communityApp.CommunityappApplicationTests - Starting CommunityappApplicationTests using Java 1.8.0_241 on dalluos-mbp with PID 18029 (started by dal in /Users/dalluo/Desktop/IdeaProjects/communityApp)
 2022-04-20 15:29:01.900 [main] INFO  c.b.communityApp.CommunityappApplicationTests - No active profile set, falling back to 1 default profile: "default"
 2022-04-20 15:29:04.530 [main] INFO  c.b.communityApp.CommunityappApplicationTests - Started CommunityappApplicationTests in 2.936 seconds (JVM running for 3.969)
+2022-04-20 16:00:44.949 [main] INFO  ca.bytetube.communityApp.dao.AwardDaoTest - Starting AwardDaoTest using Java 1.8.0_241 on dalluos-mbp with PID 18216 (started by dal in /Users/dalluo/Desktop/IdeaProjects/communityApp)
+2022-04-20 16:00:44.953 [main] INFO  ca.bytetube.communityApp.dao.AwardDaoTest - No active profile set, falling back to 1 default profile: "default"
+2022-04-20 16:00:47.393 [main] INFO  ca.bytetube.communityApp.dao.AwardDaoTest - Started AwardDaoTest in 2.758 seconds (JVM running for 3.652)
+2022-04-20 16:01:12.590 [main] INFO  ca.bytetube.communityApp.dao.AwardDaoTest - Starting AwardDaoTest using Java 1.8.0_241 on dalluos-mbp with PID 18228 (started by dal in /Users/dalluo/Desktop/IdeaProjects/communityApp)
+2022-04-20 16:01:12.591 [main] INFO  ca.bytetube.communityApp.dao.AwardDaoTest - No active profile set, falling back to 1 default profile: "default"
+2022-04-20 16:01:14.671 [main] INFO  ca.bytetube.communityApp.dao.AwardDaoTest - Started AwardDaoTest in 2.357 seconds (JVM running for 3.127)
+2022-04-20 16:01:31.846 [main] INFO  ca.bytetube.communityApp.dao.AwardDaoTest - Starting AwardDaoTest using Java 1.8.0_241 on dalluos-mbp with PID 18234 (started by dal in /Users/dalluo/Desktop/IdeaProjects/communityApp)
+2022-04-20 16:01:31.847 [main] INFO  ca.bytetube.communityApp.dao.AwardDaoTest - No active profile set, falling back to 1 default profile: "default"
+2022-04-20 16:01:34.181 [main] INFO  ca.bytetube.communityApp.dao.AwardDaoTest - Started AwardDaoTest in 2.625 seconds (JVM running for 3.401)
+2022-04-20 16:02:09.318 [main] INFO  ca.bytetube.communityApp.dao.AwardDaoTest - Starting AwardDaoTest using Java 1.8.0_241 on dalluos-mbp with PID 18242 (started by dal in /Users/dalluo/Desktop/IdeaProjects/communityApp)
+2022-04-20 16:02:09.319 [main] INFO  ca.bytetube.communityApp.dao.AwardDaoTest - No active profile set, falling back to 1 default profile: "default"
+2022-04-20 16:02:11.469 [main] INFO  ca.bytetube.communityApp.dao.AwardDaoTest - Started AwardDaoTest in 2.453 seconds (JVM running for 3.216)
+2022-04-20 16:02:30.390 [main] INFO  ca.bytetube.communityApp.dao.AwardDaoTest - Starting AwardDaoTest using Java 1.8.0_241 on dalluos-mbp with PID 18251 (started by dal in /Users/dalluo/Desktop/IdeaProjects/communityApp)
+2022-04-20 16:02:30.391 [main] INFO  ca.bytetube.communityApp.dao.AwardDaoTest - No active profile set, falling back to 1 default profile: "default"
+2022-04-20 16:02:32.455 [main] INFO  ca.bytetube.communityApp.dao.AwardDaoTest - Started AwardDaoTest in 2.336 seconds (JVM running for 3.102)
