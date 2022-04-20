@@ -97,3 +97,30 @@
 2022-04-20 16:34:45.843 [main] INFO  ca.bytetube.communityApp.dao.UserProductMapDaoTest - Starting UserProductMapDaoTest using Java 1.8.0_241 on dalluos-mbp with PID 18495 (started by dal in /Users/dalluo/Desktop/IdeaProjects/communityApp)
 2022-04-20 16:34:45.852 [main] INFO  ca.bytetube.communityApp.dao.UserProductMapDaoTest - No active profile set, falling back to 1 default profile: "default"
 2022-04-20 16:34:47.977 [main] INFO  ca.bytetube.communityApp.dao.UserProductMapDaoTest - Started UserProductMapDaoTest in 2.407 seconds (JVM running for 3.166)
+2022-04-20 16:53:51.985 [main] INFO  c.b.communityApp.dao.ProductSellDailyDaoTest - Starting ProductSellDailyDaoTest using Java 1.8.0_241 on dalluos-mbp with PID 18620 (started by dal in /Users/dalluo/Desktop/IdeaProjects/communityApp)
+2022-04-20 16:53:51.986 [main] INFO  c.b.communityApp.dao.ProductSellDailyDaoTest - No active profile set, falling back to 1 default profile: "default"
+2022-04-20 16:53:54.281 [main] INFO  c.b.communityApp.dao.ProductSellDailyDaoTest - Started ProductSellDailyDaoTest in 2.584 seconds (JVM running for 3.45)
+2022-04-20 17:09:36.392 [main] INFO  c.b.communityApp.dao.ProductSellDailyDaoTest - Starting ProductSellDailyDaoTest using Java 1.8.0_241 on dalluos-mbp with PID 18658 (started by dal in /Users/dalluo/Desktop/IdeaProjects/communityApp)
+2022-04-20 17:09:36.394 [main] INFO  c.b.communityApp.dao.ProductSellDailyDaoTest - No active profile set, falling back to 1 default profile: "default"
+2022-04-20 17:09:38.610 [main] INFO  c.b.communityApp.dao.ProductSellDailyDaoTest - Started ProductSellDailyDaoTest in 2.523 seconds (JVM running for 3.429)
+2022-04-20 17:11:02.514 [main] INFO  c.b.communityApp.dao.ProductSellDailyDaoTest - Starting ProductSellDailyDaoTest using Java 1.8.0_241 on dalluos-mbp with PID 18670 (started by dal in /Users/dalluo/Desktop/IdeaProjects/communityApp)
+2022-04-20 17:11:02.516 [main] INFO  c.b.communityApp.dao.ProductSellDailyDaoTest - No active profile set, falling back to 1 default profile: "default"
+2022-04-20 17:11:04.643 [main] INFO  c.b.communityApp.dao.ProductSellDailyDaoTest - Started ProductSellDailyDaoTest in 2.41 seconds (JVM running for 3.168)
+2022-04-20 17:12:49.915 [main] INFO  c.b.communityApp.dao.ProductSellDailyDaoTest - Starting ProductSellDailyDaoTest using Java 1.8.0_241 on dalluos-mbp with PID 18688 (started by dal in /Users/dalluo/Desktop/IdeaProjects/communityApp)
+2022-04-20 17:12:49.916 [main] INFO  c.b.communityApp.dao.ProductSellDailyDaoTest - No active profile set, falling back to 1 default profile: "default"
+2022-04-20 17:12:51.893 [main] INFO  c.b.communityApp.dao.ProductSellDailyDaoTest - Started ProductSellDailyDaoTest in 2.249 seconds (JVM running for 3.015)
+2022-04-20 17:15:12.954 [main] INFO  c.b.communityApp.dao.ProductSellDailyDaoTest - Starting ProductSellDailyDaoTest using Java 1.8.0_241 on dalluos-mbp with PID 18708 (started by dal in /Users/dalluo/Desktop/IdeaProjects/communityApp)
+2022-04-20 17:15:12.955 [main] INFO  c.b.communityApp.dao.ProductSellDailyDaoTest - No active profile set, falling back to 1 default profile: "default"
+2022-04-20 17:15:15.175 [main] INFO  c.b.communityApp.dao.ProductSellDailyDaoTest - Started ProductSellDailyDaoTest in 2.5 seconds (JVM running for 3.276)
+2022-04-20 17:17:09.844 [main] INFO  c.b.communityApp.dao.ProductSellDailyDaoTest - Starting ProductSellDailyDaoTest using Java 1.8.0_241 on dalluos-mbp with PID 18725 (started by dal in /Users/dalluo/Desktop/IdeaProjects/communityApp)
+2022-04-20 17:17:09.847 [main] INFO  c.b.communityApp.dao.ProductSellDailyDaoTest - No active profile set, falling back to 1 default profile: "default"
+2022-04-20 17:17:12.043 [main] INFO  c.b.communityApp.dao.ProductSellDailyDaoTest - Started ProductSellDailyDaoTest in 2.521 seconds (JVM running for 3.328)
+2022-04-20 17:17:54.739 [main] INFO  c.b.communityApp.dao.ProductSellDailyDaoTest - Starting ProductSellDailyDaoTest using Java 1.8.0_241 on dalluos-mbp with PID 18736 (started by dal in /Users/dalluo/Desktop/IdeaProjects/communityApp)
+2022-04-20 17:17:54.740 [main] INFO  c.b.communityApp.dao.ProductSellDailyDaoTest - No active profile set, falling back to 1 default profile: "default"
+2022-04-20 17:17:56.937 [main] INFO  c.b.communityApp.dao.ProductSellDailyDaoTest - Started ProductSellDailyDaoTest in 2.477 seconds (JVM running for 3.246)
+2022-04-20 17:18:53.293 [main] INFO  c.b.communityApp.dao.ProductSellDailyDaoTest - Starting ProductSellDailyDaoTest using Java 1.8.0_241 on dalluos-mbp with PID 18747 (started by dal in /Users/dalluo/Desktop/IdeaProjects/communityApp)
+2022-04-20 17:18:53.303 [main] INFO  c.b.communityApp.dao.ProductSellDailyDaoTest - No active profile set, falling back to 1 default profile: "default"
+2022-04-20 17:18:55.501 [main] INFO  c.b.communityApp.dao.ProductSellDailyDaoTest - Started ProductSellDailyDaoTest in 2.49 seconds (JVM running for 3.283)
+2022-04-20 17:19:00.216 [main] INFO  c.b.communityApp.dao.ProductSellDailyDaoTest - Starting ProductSellDailyDaoTest using Java 1.8.0_241 on dalluos-mbp with PID 18755 (started by dal in /Users/dalluo/Desktop/IdeaProjects/communityApp)
+2022-04-20 17:19:00.217 [main] INFO  c.b.communityApp.dao.ProductSellDailyDaoTest - No active profile set, falling back to 1 default profile: "default"
+2022-04-20 17:19:02.516 [main] INFO  c.b.communityApp.dao.ProductSellDailyDaoTest - Started ProductSellDailyDaoTest in 2.587 seconds (JVM running for 3.404)
