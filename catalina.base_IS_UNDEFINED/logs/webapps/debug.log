@@ -524,3 +524,82 @@
 2022-04-20 17:19:03.387 [main] DEBUG c.b.c.d.P.insertDefaultProductSellDaily - ==>  Preparing: INSERT INTO tb_product_sell_daily(product_id,shop_id,create_time,total) ( SELECT p.product_id,p.shop_id,date_sub(curdate(),interval 1 day),0 AS total FROM tb_product p WHERE p.product_id not in (select product_id from tb_product_sell_daily where date_format(create_time,'%Y-%m-%d') = date_sub(curdate(),interval 1 day)) )
 2022-04-20 17:19:03.421 [main] DEBUG c.b.c.d.P.insertDefaultProductSellDaily - ==> Parameters: 
 2022-04-20 17:19:03.508 [main] DEBUG c.b.c.d.P.insertDefaultProductSellDaily - <==    Updates: 0
+2022-04-20 17:40:00.114 [main] DEBUG ca.bytetube.communityApp.dao.UserShopMapDaoTest - Running with Spring Boot v2.6.6, Spring v5.3.18
+2022-04-20 17:40:03.517 [main] DEBUG c.b.c.dao.UserShopMapDao.insertUserShopMap - ==>  Preparing: INSERT INTO tb_user_shop_map(user_id, shop_id, create_time, point) VALUES (?, ?, ?, ?)
+2022-04-20 17:40:03.545 [main] DEBUG c.b.c.dao.UserShopMapDao.insertUserShopMap - ==> Parameters: 1(Long), 1(Long), 2022-04-20 17:40:02.599(Timestamp), 1(Integer)
+2022-04-20 17:40:03.619 [main] DEBUG c.b.c.dao.UserShopMapDao.insertUserShopMap - <==    Updates: 1
+2022-04-20 17:40:03.635 [main] DEBUG c.b.c.dao.UserShopMapDao.insertUserShopMap - ==>  Preparing: INSERT INTO tb_user_shop_map(user_id, shop_id, create_time, point) VALUES (?, ?, ?, ?)
+2022-04-20 17:40:03.635 [main] DEBUG c.b.c.dao.UserShopMapDao.insertUserShopMap - ==> Parameters: 2(Long), 2(Long), 2022-04-20 17:40:03.634(Timestamp), 1(Integer)
+2022-04-20 17:40:03.770 [main] DEBUG c.b.c.dao.UserShopMapDao.insertUserShopMap - <==    Updates: 1
+2022-04-20 17:41:08.355 [main] DEBUG ca.bytetube.communityApp.dao.UserShopMapDaoTest - Running with Spring Boot v2.6.6, Spring v5.3.18
+2022-04-20 17:41:11.404 [main] DEBUG c.b.c.dao.UserShopMapDao.queryUserShopMapList - ==>  Preparing: SELECT usm.user_shop_id, usm.create_time, usm.point, buyer.user_id, buyer.name, s.shop_id, s.shop_name FROM tb_user_shop_map usm, tb_person_info buyer, tb_shop s WHERE usm.user_id = buyer.user_id and usm.shop_id = s.shop_id LIMIT ?,?;
+2022-04-20 17:41:11.432 [main] DEBUG c.b.c.dao.UserShopMapDao.queryUserShopMapList - ==> Parameters: 0(Integer), 2(Integer)
+2022-04-20 17:41:11.711 [main] DEBUG c.b.c.dao.UserShopMapDao.queryUserShopMapList - <==      Total: 2
+2022-04-20 17:41:11.716 [main] DEBUG c.b.c.dao.UserShopMapDao.queryUserShopMapCount - ==>  Preparing: SELECT count(1) FROM tb_user_shop_map usm, tb_person_info buyer, tb_shop s WHERE usm.user_id = buyer.user_id and usm.shop_id = s.shop_id
+2022-04-20 17:41:11.716 [main] DEBUG c.b.c.dao.UserShopMapDao.queryUserShopMapCount - ==> Parameters: 
+2022-04-20 17:41:11.747 [main] DEBUG c.b.c.dao.UserShopMapDao.queryUserShopMapCount - <==      Total: 1
+2022-04-20 17:41:11.750 [main] DEBUG c.b.c.dao.UserShopMapDao.queryUserShopMapList - ==>  Preparing: SELECT usm.user_shop_id, usm.create_time, usm.point, buyer.user_id, buyer.name, s.shop_id, s.shop_name FROM tb_user_shop_map usm, tb_person_info buyer, tb_shop s WHERE usm.user_id = buyer.user_id and usm.shop_id = s.shop_id and usm.shop_id = ? LIMIT ?,?;
+2022-04-20 17:41:11.751 [main] DEBUG c.b.c.dao.UserShopMapDao.queryUserShopMapList - ==> Parameters: 1(Long), 0(Integer), 3(Integer)
+2022-04-20 17:41:11.786 [main] DEBUG c.b.c.dao.UserShopMapDao.queryUserShopMapList - <==      Total: 1
+2022-04-20 17:41:12.150 [main] DEBUG c.b.c.dao.UserShopMapDao.queryUserShopMapCount - ==>  Preparing: SELECT count(1) FROM tb_user_shop_map usm, tb_person_info buyer, tb_shop s WHERE usm.user_id = buyer.user_id and usm.shop_id = s.shop_id and usm.shop_id = ?
+2022-04-20 17:41:12.151 [main] DEBUG c.b.c.dao.UserShopMapDao.queryUserShopMapCount - ==> Parameters: 1(Long)
+2022-04-20 17:41:12.216 [main] DEBUG c.b.c.dao.UserShopMapDao.queryUserShopMapCount - <==      Total: 1
+2022-04-20 17:41:12.218 [main] DEBUG c.b.c.dao.UserShopMapDao.queryUserShopMap - ==>  Preparing: SELECT usm.user_shop_id, usm.create_time, usm.point, buyer.user_id, buyer.name, s.shop_id, s.shop_name FROM tb_user_shop_map usm, tb_person_info buyer, tb_shop s WHERE usm.user_id = buyer.user_id and usm.shop_id = s.shop_id and usm.user_id = ? and usm.shop_id = ?
+2022-04-20 17:41:12.219 [main] DEBUG c.b.c.dao.UserShopMapDao.queryUserShopMap - ==> Parameters: 1(Long), 1(Long)
+2022-04-20 17:41:12.254 [main] DEBUG c.b.c.dao.UserShopMapDao.queryUserShopMap - <==      Total: 1
+2022-04-20 17:41:49.707 [main] DEBUG ca.bytetube.communityApp.dao.UserShopMapDaoTest - Running with Spring Boot v2.6.6, Spring v5.3.18
+2022-04-20 17:41:52.631 [main] DEBUG c.b.c.dao.UserShopMapDao.queryUserShopMap - ==>  Preparing: SELECT usm.user_shop_id, usm.create_time, usm.point, buyer.user_id, buyer.name, s.shop_id, s.shop_name FROM tb_user_shop_map usm, tb_person_info buyer, tb_shop s WHERE usm.user_id = buyer.user_id and usm.shop_id = s.shop_id and usm.user_id = ? and usm.shop_id = ?
+2022-04-20 17:41:52.660 [main] DEBUG c.b.c.dao.UserShopMapDao.queryUserShopMap - ==> Parameters: 1(Long), 1(Long)
+2022-04-20 17:41:52.715 [main] DEBUG c.b.c.dao.UserShopMapDao.queryUserShopMap - <==      Total: 1
+2022-04-20 17:41:52.719 [main] DEBUG c.b.c.dao.UserShopMapDao.updateUserShopMapPoint - ==>  Preparing: UPDATE tb_user_shop_map SET point=? where user_id = ? AND shop_id = ?
+2022-04-20 17:41:52.721 [main] DEBUG c.b.c.dao.UserShopMapDao.updateUserShopMapPoint - ==> Parameters: 2(Integer), 1(Long), 1(Long)
+2022-04-20 17:41:52.793 [main] DEBUG c.b.c.dao.UserShopMapDao.updateUserShopMapPoint - <==    Updates: 1
+2022-04-20 17:42:09.609 [main] DEBUG ca.bytetube.communityApp.dao.UserShopMapDaoTest - Running with Spring Boot v2.6.6, Spring v5.3.18
+2022-04-20 17:42:12.546 [main] DEBUG c.b.c.dao.UserShopMapDao.insertUserShopMap - ==>  Preparing: INSERT INTO tb_user_shop_map(user_id, shop_id, create_time, point) VALUES (?, ?, ?, ?)
+2022-04-20 17:42:12.576 [main] DEBUG c.b.c.dao.UserShopMapDao.insertUserShopMap - ==> Parameters: 1(Long), 1(Long), 2022-04-20 17:42:11.898(Timestamp), 1(Integer)
+2022-04-20 17:42:12.800 [main] DEBUG c.b.c.dao.UserShopMapDao.queryUserShopMapList - ==>  Preparing: SELECT usm.user_shop_id, usm.create_time, usm.point, buyer.user_id, buyer.name, s.shop_id, s.shop_name FROM tb_user_shop_map usm, tb_person_info buyer, tb_shop s WHERE usm.user_id = buyer.user_id and usm.shop_id = s.shop_id LIMIT ?,?;
+2022-04-20 17:42:12.800 [main] DEBUG c.b.c.dao.UserShopMapDao.queryUserShopMapList - ==> Parameters: 0(Integer), 2(Integer)
+2022-04-20 17:42:12.854 [main] DEBUG c.b.c.dao.UserShopMapDao.queryUserShopMapList - <==      Total: 2
+2022-04-20 17:42:12.957 [main] DEBUG c.b.c.dao.UserShopMapDao.queryUserShopMapCount - ==>  Preparing: SELECT count(1) FROM tb_user_shop_map usm, tb_person_info buyer, tb_shop s WHERE usm.user_id = buyer.user_id and usm.shop_id = s.shop_id
+2022-04-20 17:42:12.957 [main] DEBUG c.b.c.dao.UserShopMapDao.queryUserShopMapCount - ==> Parameters: 
+2022-04-20 17:42:12.994 [main] DEBUG c.b.c.dao.UserShopMapDao.queryUserShopMapCount - <==      Total: 1
+2022-04-20 17:42:12.996 [main] DEBUG c.b.c.dao.UserShopMapDao.queryUserShopMapList - ==>  Preparing: SELECT usm.user_shop_id, usm.create_time, usm.point, buyer.user_id, buyer.name, s.shop_id, s.shop_name FROM tb_user_shop_map usm, tb_person_info buyer, tb_shop s WHERE usm.user_id = buyer.user_id and usm.shop_id = s.shop_id and usm.shop_id = ? LIMIT ?,?;
+2022-04-20 17:42:12.997 [main] DEBUG c.b.c.dao.UserShopMapDao.queryUserShopMapList - ==> Parameters: 1(Long), 0(Integer), 3(Integer)
+2022-04-20 17:42:13.039 [main] DEBUG c.b.c.dao.UserShopMapDao.queryUserShopMapList - <==      Total: 1
+2022-04-20 17:42:13.040 [main] DEBUG c.b.c.dao.UserShopMapDao.queryUserShopMapCount - ==>  Preparing: SELECT count(1) FROM tb_user_shop_map usm, tb_person_info buyer, tb_shop s WHERE usm.user_id = buyer.user_id and usm.shop_id = s.shop_id and usm.shop_id = ?
+2022-04-20 17:42:13.041 [main] DEBUG c.b.c.dao.UserShopMapDao.queryUserShopMapCount - ==> Parameters: 1(Long)
+2022-04-20 17:42:13.074 [main] DEBUG c.b.c.dao.UserShopMapDao.queryUserShopMapCount - <==      Total: 1
+2022-04-20 17:42:13.384 [main] DEBUG c.b.c.dao.UserShopMapDao.queryUserShopMap - ==>  Preparing: SELECT usm.user_shop_id, usm.create_time, usm.point, buyer.user_id, buyer.name, s.shop_id, s.shop_name FROM tb_user_shop_map usm, tb_person_info buyer, tb_shop s WHERE usm.user_id = buyer.user_id and usm.shop_id = s.shop_id and usm.user_id = ? and usm.shop_id = ?
+2022-04-20 17:42:13.385 [main] DEBUG c.b.c.dao.UserShopMapDao.queryUserShopMap - ==> Parameters: 1(Long), 1(Long)
+2022-04-20 17:42:13.421 [main] DEBUG c.b.c.dao.UserShopMapDao.queryUserShopMap - <==      Total: 1
+2022-04-20 17:42:13.427 [main] DEBUG c.b.c.dao.UserShopMapDao.queryUserShopMap - ==>  Preparing: SELECT usm.user_shop_id, usm.create_time, usm.point, buyer.user_id, buyer.name, s.shop_id, s.shop_name FROM tb_user_shop_map usm, tb_person_info buyer, tb_shop s WHERE usm.user_id = buyer.user_id and usm.shop_id = s.shop_id and usm.user_id = ? and usm.shop_id = ?
+2022-04-20 17:42:13.428 [main] DEBUG c.b.c.dao.UserShopMapDao.queryUserShopMap - ==> Parameters: 1(Long), 1(Long)
+2022-04-20 17:42:13.468 [main] DEBUG c.b.c.dao.UserShopMapDao.queryUserShopMap - <==      Total: 1
+2022-04-20 17:42:25.247 [main] DEBUG ca.bytetube.communityApp.dao.UserShopMapDaoTest - Running with Spring Boot v2.6.6, Spring v5.3.18
+2022-04-20 17:42:28.236 [main] DEBUG c.b.c.dao.UserShopMapDao.insertUserShopMap - ==>  Preparing: INSERT INTO tb_user_shop_map(user_id, shop_id, create_time, point) VALUES (?, ?, ?, ?)
+2022-04-20 17:42:28.268 [main] DEBUG c.b.c.dao.UserShopMapDao.insertUserShopMap - ==> Parameters: 1(Long), 1(Long), 2022-04-20 17:42:27.587(Timestamp), 1(Integer)
+2022-04-20 17:42:28.364 [main] DEBUG c.b.c.dao.UserShopMapDao.insertUserShopMap - <==    Updates: 1
+2022-04-20 17:42:28.377 [main] DEBUG c.b.c.dao.UserShopMapDao.insertUserShopMap - ==>  Preparing: INSERT INTO tb_user_shop_map(user_id, shop_id, create_time, point) VALUES (?, ?, ?, ?)
+2022-04-20 17:42:28.378 [main] DEBUG c.b.c.dao.UserShopMapDao.insertUserShopMap - ==> Parameters: 2(Long), 2(Long), 2022-04-20 17:42:28.377(Timestamp), 1(Integer)
+2022-04-20 17:42:28.449 [main] DEBUG c.b.c.dao.UserShopMapDao.insertUserShopMap - <==    Updates: 1
+2022-04-20 17:42:28.491 [main] DEBUG c.b.c.dao.UserShopMapDao.queryUserShopMapList - ==>  Preparing: SELECT usm.user_shop_id, usm.create_time, usm.point, buyer.user_id, buyer.name, s.shop_id, s.shop_name FROM tb_user_shop_map usm, tb_person_info buyer, tb_shop s WHERE usm.user_id = buyer.user_id and usm.shop_id = s.shop_id LIMIT ?,?;
+2022-04-20 17:42:28.492 [main] DEBUG c.b.c.dao.UserShopMapDao.queryUserShopMapList - ==> Parameters: 0(Integer), 2(Integer)
+2022-04-20 17:42:28.531 [main] DEBUG c.b.c.dao.UserShopMapDao.queryUserShopMapList - <==      Total: 2
+2022-04-20 17:42:28.647 [main] DEBUG c.b.c.dao.UserShopMapDao.queryUserShopMapCount - ==>  Preparing: SELECT count(1) FROM tb_user_shop_map usm, tb_person_info buyer, tb_shop s WHERE usm.user_id = buyer.user_id and usm.shop_id = s.shop_id
+2022-04-20 17:42:28.648 [main] DEBUG c.b.c.dao.UserShopMapDao.queryUserShopMapCount - ==> Parameters: 
+2022-04-20 17:42:28.695 [main] DEBUG c.b.c.dao.UserShopMapDao.queryUserShopMapCount - <==      Total: 1
+2022-04-20 17:42:28.699 [main] DEBUG c.b.c.dao.UserShopMapDao.queryUserShopMapList - ==>  Preparing: SELECT usm.user_shop_id, usm.create_time, usm.point, buyer.user_id, buyer.name, s.shop_id, s.shop_name FROM tb_user_shop_map usm, tb_person_info buyer, tb_shop s WHERE usm.user_id = buyer.user_id and usm.shop_id = s.shop_id and usm.shop_id = ? LIMIT ?,?;
+2022-04-20 17:42:28.700 [main] DEBUG c.b.c.dao.UserShopMapDao.queryUserShopMapList - ==> Parameters: 1(Long), 0(Integer), 3(Integer)
+2022-04-20 17:42:28.735 [main] DEBUG c.b.c.dao.UserShopMapDao.queryUserShopMapList - <==      Total: 1
+2022-04-20 17:42:28.737 [main] DEBUG c.b.c.dao.UserShopMapDao.queryUserShopMapCount - ==>  Preparing: SELECT count(1) FROM tb_user_shop_map usm, tb_person_info buyer, tb_shop s WHERE usm.user_id = buyer.user_id and usm.shop_id = s.shop_id and usm.shop_id = ?
+2022-04-20 17:42:28.737 [main] DEBUG c.b.c.dao.UserShopMapDao.queryUserShopMapCount - ==> Parameters: 1(Long)
+2022-04-20 17:42:28.789 [main] DEBUG c.b.c.dao.UserShopMapDao.queryUserShopMapCount - <==      Total: 1
+2022-04-20 17:42:29.060 [main] DEBUG c.b.c.dao.UserShopMapDao.queryUserShopMap - ==>  Preparing: SELECT usm.user_shop_id, usm.create_time, usm.point, buyer.user_id, buyer.name, s.shop_id, s.shop_name FROM tb_user_shop_map usm, tb_person_info buyer, tb_shop s WHERE usm.user_id = buyer.user_id and usm.shop_id = s.shop_id and usm.user_id = ? and usm.shop_id = ?
+2022-04-20 17:42:29.061 [main] DEBUG c.b.c.dao.UserShopMapDao.queryUserShopMap - ==> Parameters: 1(Long), 1(Long)
+2022-04-20 17:42:29.104 [main] DEBUG c.b.c.dao.UserShopMapDao.queryUserShopMap - <==      Total: 1
+2022-04-20 17:42:29.111 [main] DEBUG c.b.c.dao.UserShopMapDao.queryUserShopMap - ==>  Preparing: SELECT usm.user_shop_id, usm.create_time, usm.point, buyer.user_id, buyer.name, s.shop_id, s.shop_name FROM tb_user_shop_map usm, tb_person_info buyer, tb_shop s WHERE usm.user_id = buyer.user_id and usm.shop_id = s.shop_id and usm.user_id = ? and usm.shop_id = ?
+2022-04-20 17:42:29.112 [main] DEBUG c.b.c.dao.UserShopMapDao.queryUserShopMap - ==> Parameters: 1(Long), 1(Long)
+2022-04-20 17:42:29.149 [main] DEBUG c.b.c.dao.UserShopMapDao.queryUserShopMap - <==      Total: 1
+2022-04-20 17:42:29.150 [main] DEBUG c.b.c.dao.UserShopMapDao.updateUserShopMapPoint - ==>  Preparing: UPDATE tb_user_shop_map SET point=? where user_id = ? AND shop_id = ?
+2022-04-20 17:42:29.150 [main] DEBUG c.b.c.dao.UserShopMapDao.updateUserShopMapPoint - ==> Parameters: 2(Integer), 1(Long), 1(Long)
+2022-04-20 17:42:29.246 [main] DEBUG c.b.c.dao.UserShopMapDao.updateUserShopMapPoint - <==    Updates: 1
