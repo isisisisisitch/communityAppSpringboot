@@ -305,3 +305,181 @@
 2022-04-20 16:02:33.467 [main] DEBUG ca.bytetube.communityApp.dao.AwardDao.deleteAward - ==>  Preparing: DELETE FROM tb_award WHERE award_id = ? AND shop_id=?
 2022-04-20 16:02:33.468 [main] DEBUG ca.bytetube.communityApp.dao.AwardDao.deleteAward - ==> Parameters: 7(Long), 1(Long)
 2022-04-20 16:02:33.536 [main] DEBUG ca.bytetube.communityApp.dao.AwardDao.deleteAward - <==    Updates: 1
+2022-04-20 16:07:05.613 [main] DEBUG ca.bytetube.communityApp.dao.UserAwardMapDaoTest - Running with Spring Boot v2.6.6, Spring v5.3.18
+2022-04-20 16:07:08.527 [main] DEBUG c.b.c.dao.UserAwardMapDao.insertUserAwardMap - ==>  Preparing: INSERT INTO tb_user_award_map(user_id,award_id,shop_id,operator_id, create_time,used_status,point) VALUES (?,?,?,?, ?,?,?)
+2022-04-20 16:07:08.559 [main] DEBUG c.b.c.dao.UserAwardMapDao.insertUserAwardMap - ==> Parameters: 1(Long), 1(Long), 1(Long), 1(Long), 2022-04-20 16:07:07.895(Timestamp), 1(Integer), 1(Integer)
+2022-04-20 16:07:08.794 [main] DEBUG c.b.c.dao.UserAwardMapDao.queryUserAwardMapList - ==>  Preparing: SELECT uam.user_award_id, uam.create_time, uam.used_status, uam.point, buyer.user_id, buyer.name, s.shop_id, s.shop_name, a.award_id, a.award_name, uam.operator_id AS operator_id FROM tb_user_award_map uam, tb_person_info buyer, tb_shop s, tb_award a WHERE uam.user_id = buyer.user_id and uam.shop_id = s.shop_id and uam.award_id = a.award_id ORDER BY uam.create_time desc LIMIT ?,?;
+2022-04-20 16:07:08.795 [main] DEBUG c.b.c.dao.UserAwardMapDao.queryUserAwardMapList - ==> Parameters: 0(Integer), 3(Integer)
+2022-04-20 16:07:08.850 [main] DEBUG c.b.c.dao.UserAwardMapDao.queryUserAwardMapList - <==      Total: 0
+2022-04-20 16:07:08.954 [main] DEBUG c.b.c.dao.UserAwardMapDao.queryUserAwardMapList - ==>  Preparing: SELECT uam.user_award_id, uam.create_time, uam.used_status, uam.point, buyer.user_id, buyer.name, s.shop_id, s.shop_name, a.award_id, a.award_name, uam.operator_id AS operator_id FROM tb_user_award_map uam, tb_person_info buyer, tb_shop s, tb_award a WHERE uam.user_id = buyer.user_id and uam.shop_id = s.shop_id and uam.award_id = a.award_id and buyer.name like '%test%' ORDER BY uam.create_time desc LIMIT ?,?;
+2022-04-20 16:07:08.955 [main] DEBUG c.b.c.dao.UserAwardMapDao.queryUserAwardMapList - ==> Parameters: 0(Integer), 1(Integer)
+2022-04-20 16:07:08.995 [main] DEBUG c.b.c.dao.UserAwardMapDao.queryUserAwardMapList - <==      Total: 0
+2022-04-20 16:14:00.073 [main] DEBUG ca.bytetube.communityApp.dao.UserAwardMapDaoTest - Running with Spring Boot v2.6.6, Spring v5.3.18
+2022-04-20 16:14:03.004 [main] DEBUG c.b.c.dao.UserAwardMapDao.queryUserAwardMapList - ==>  Preparing: SELECT uam.user_award_id, uam.create_time, uam.used_status, uam.point, buyer.user_id, buyer.name, s.shop_id, s.shop_name, a.award_id, a.award_name, uam.operator_id AS operator_id FROM tb_user_award_map uam, tb_person_info buyer, tb_shop s, tb_award a WHERE uam.user_id = buyer.user_id and uam.shop_id = s.shop_id and uam.award_id = a.award_id ORDER BY uam.create_time desc LIMIT ?,?;
+2022-04-20 16:14:03.033 [main] DEBUG c.b.c.dao.UserAwardMapDao.queryUserAwardMapList - ==> Parameters: 0(Integer), 3(Integer)
+2022-04-20 16:14:03.086 [main] DEBUG c.b.c.dao.UserAwardMapDao.queryUserAwardMapList - <==      Total: 0
+2022-04-20 16:14:29.073 [main] DEBUG ca.bytetube.communityApp.dao.UserAwardMapDaoTest - Running with Spring Boot v2.6.6, Spring v5.3.18
+2022-04-20 16:14:31.890 [main] DEBUG c.b.c.dao.UserAwardMapDao.queryUserAwardMapList - ==>  Preparing: SELECT uam.user_award_id, uam.create_time, uam.used_status, uam.point, buyer.user_id, buyer.name, s.shop_id, s.shop_name, a.award_id, a.award_name, uam.operator_id AS operator_id FROM tb_user_award_map uam, tb_person_info buyer, tb_shop s, tb_award a WHERE uam.user_id = buyer.user_id and uam.shop_id = s.shop_id and uam.award_id = a.award_id ORDER BY uam.create_time desc LIMIT ?,?;
+2022-04-20 16:14:31.917 [main] DEBUG c.b.c.dao.UserAwardMapDao.queryUserAwardMapList - ==> Parameters: 0(Integer), 3(Integer)
+2022-04-20 16:14:31.968 [main] DEBUG c.b.c.dao.UserAwardMapDao.queryUserAwardMapList - <==      Total: 0
+2022-04-20 16:14:31.973 [main] DEBUG c.b.c.dao.UserAwardMapDao.queryUserAwardMapCount - ==>  Preparing: SELECT count(1) FROM tb_user_award_map uam, tb_person_info buyer, tb_shop s, tb_award a WHERE uam.user_id = buyer.user_id and uam.shop_id = s.shop_id and uam.award_id = a.award_id
+2022-04-20 16:14:31.973 [main] DEBUG c.b.c.dao.UserAwardMapDao.queryUserAwardMapCount - ==> Parameters: 
+2022-04-20 16:14:32.014 [main] DEBUG c.b.c.dao.UserAwardMapDao.queryUserAwardMapCount - <==      Total: 1
+2022-04-20 16:14:32.018 [main] DEBUG c.b.c.dao.UserAwardMapDao.queryUserAwardMapList - ==>  Preparing: SELECT uam.user_award_id, uam.create_time, uam.used_status, uam.point, buyer.user_id, buyer.name, s.shop_id, s.shop_name, a.award_id, a.award_name, uam.operator_id AS operator_id FROM tb_user_award_map uam, tb_person_info buyer, tb_shop s, tb_award a WHERE uam.user_id = buyer.user_id and uam.shop_id = s.shop_id and uam.award_id = a.award_id and buyer.name like '%test%' ORDER BY uam.create_time desc LIMIT ?,?;
+2022-04-20 16:14:32.018 [main] DEBUG c.b.c.dao.UserAwardMapDao.queryUserAwardMapList - ==> Parameters: 0(Integer), 3(Integer)
+2022-04-20 16:14:32.056 [main] DEBUG c.b.c.dao.UserAwardMapDao.queryUserAwardMapList - <==      Total: 0
+2022-04-20 16:14:46.728 [main] DEBUG ca.bytetube.communityApp.dao.UserAwardMapDaoTest - Running with Spring Boot v2.6.6, Spring v5.3.18
+2022-04-20 16:14:49.648 [main] DEBUG c.b.c.dao.UserAwardMapDao.queryUserAwardMapList - ==>  Preparing: SELECT uam.user_award_id, uam.create_time, uam.used_status, uam.point, buyer.user_id, buyer.name, s.shop_id, s.shop_name, a.award_id, a.award_name, uam.operator_id AS operator_id FROM tb_user_award_map uam, tb_person_info buyer, tb_shop s, tb_award a WHERE uam.user_id = buyer.user_id and uam.shop_id = s.shop_id and uam.award_id = a.award_id ORDER BY uam.create_time desc LIMIT ?,?;
+2022-04-20 16:14:49.677 [main] DEBUG c.b.c.dao.UserAwardMapDao.queryUserAwardMapList - ==> Parameters: 0(Integer), 3(Integer)
+2022-04-20 16:14:49.736 [main] DEBUG c.b.c.dao.UserAwardMapDao.queryUserAwardMapList - <==      Total: 0
+2022-04-20 16:14:49.741 [main] DEBUG c.b.c.dao.UserAwardMapDao.queryUserAwardMapCount - ==>  Preparing: SELECT count(1) FROM tb_user_award_map uam, tb_person_info buyer, tb_shop s, tb_award a WHERE uam.user_id = buyer.user_id and uam.shop_id = s.shop_id and uam.award_id = a.award_id
+2022-04-20 16:14:49.741 [main] DEBUG c.b.c.dao.UserAwardMapDao.queryUserAwardMapCount - ==> Parameters: 
+2022-04-20 16:14:49.790 [main] DEBUG c.b.c.dao.UserAwardMapDao.queryUserAwardMapCount - <==      Total: 1
+2022-04-20 16:14:49.793 [main] DEBUG c.b.c.dao.UserAwardMapDao.queryUserAwardMapList - ==>  Preparing: SELECT uam.user_award_id, uam.create_time, uam.used_status, uam.point, buyer.user_id, buyer.name, s.shop_id, s.shop_name, a.award_id, a.award_name, uam.operator_id AS operator_id FROM tb_user_award_map uam, tb_person_info buyer, tb_shop s, tb_award a WHERE uam.user_id = buyer.user_id and uam.shop_id = s.shop_id and uam.award_id = a.award_id and buyer.name like '%test%' ORDER BY uam.create_time desc LIMIT ?,?;
+2022-04-20 16:14:49.793 [main] DEBUG c.b.c.dao.UserAwardMapDao.queryUserAwardMapList - ==> Parameters: 0(Integer), 3(Integer)
+2022-04-20 16:14:49.832 [main] DEBUG c.b.c.dao.UserAwardMapDao.queryUserAwardMapList - <==      Total: 0
+2022-04-20 16:14:50.066 [main] DEBUG c.b.c.dao.UserAwardMapDao.queryUserAwardMapCount - ==>  Preparing: SELECT count(1) FROM tb_user_award_map uam, tb_person_info buyer, tb_shop s, tb_award a WHERE uam.user_id = buyer.user_id and uam.shop_id = s.shop_id and uam.award_id = a.award_id and buyer.name like '%test%'
+2022-04-20 16:14:50.067 [main] DEBUG c.b.c.dao.UserAwardMapDao.queryUserAwardMapCount - ==> Parameters: 
+2022-04-20 16:14:50.106 [main] DEBUG c.b.c.dao.UserAwardMapDao.queryUserAwardMapCount - <==      Total: 1
+2022-04-20 16:15:55.616 [main] DEBUG ca.bytetube.communityApp.dao.UserAwardMapDaoTest - Running with Spring Boot v2.6.6, Spring v5.3.18
+2022-04-20 16:15:58.468 [main] DEBUG c.b.c.dao.UserAwardMapDao.insertUserAwardMap - ==>  Preparing: INSERT INTO tb_user_award_map(user_id,award_id,shop_id,operator_id, create_time,used_status,point) VALUES (?,?,?,?, ?,?,?)
+2022-04-20 16:15:58.499 [main] DEBUG c.b.c.dao.UserAwardMapDao.insertUserAwardMap - ==> Parameters: 1(Long), 1(Long), 1(Long), 1(Long), 2022-04-20 16:15:57.847(Timestamp), 1(Integer), 1(Integer)
+2022-04-20 16:19:10.032 [main] DEBUG ca.bytetube.communityApp.dao.UserAwardMapDaoTest - Running with Spring Boot v2.6.6, Spring v5.3.18
+2022-04-20 16:19:13.091 [main] DEBUG c.b.c.dao.UserAwardMapDao.insertUserAwardMap - ==>  Preparing: INSERT INTO tb_user_award_map(user_id,award_id,shop_id,operator_id, create_time,used_status,point) VALUES (?,?,?,?, ?,?,?)
+2022-04-20 16:19:13.123 [main] DEBUG c.b.c.dao.UserAwardMapDao.insertUserAwardMap - ==> Parameters: 1(Long), 1(Long), 1(Long), 1(Long), 2022-04-20 16:19:12.423(Timestamp), 1(Integer), 1(Integer)
+2022-04-20 16:23:28.491 [main] DEBUG ca.bytetube.communityApp.dao.AwardDaoTest - Running with Spring Boot v2.6.6, Spring v5.3.18
+2022-04-20 16:23:31.246 [main] DEBUG ca.bytetube.communityApp.dao.AwardDao.insertAward - ==>  Preparing: INSERT INTO tb_award(award_name,award_desc,award_img, point,priority,create_time, last_edit_time,enable_status,shop_id) VALUES (?,?,?, ?,?,?, ?,?,?)
+2022-04-20 16:23:31.275 [main] DEBUG ca.bytetube.communityApp.dao.AwardDao.insertAward - ==> Parameters: test1(String), null, test1(String), 5(Integer), 1(Integer), 2022-04-20 16:23:30.634(Timestamp), 2022-04-20 16:23:30.634(Timestamp), 1(Integer), 1(Long)
+2022-04-20 16:23:31.353 [main] DEBUG ca.bytetube.communityApp.dao.AwardDao.insertAward - <==    Updates: 1
+2022-04-20 16:23:31.370 [main] DEBUG ca.bytetube.communityApp.dao.AwardDao.insertAward - ==>  Preparing: INSERT INTO tb_award(award_name,award_desc,award_img, point,priority,create_time, last_edit_time,enable_status,shop_id) VALUES (?,?,?, ?,?,?, ?,?,?)
+2022-04-20 16:23:31.371 [main] DEBUG ca.bytetube.communityApp.dao.AwardDao.insertAward - ==> Parameters: test2(String), null, test2(String), 2(Integer), 2(Integer), 2022-04-20 16:23:31.37(Timestamp), 2022-04-20 16:23:31.37(Timestamp), 0(Integer), 1(Long)
+2022-04-20 16:23:31.439 [main] DEBUG ca.bytetube.communityApp.dao.AwardDao.insertAward - <==    Updates: 1
+2022-04-20 16:25:06.285 [main] DEBUG ca.bytetube.communityApp.dao.UserAwardMapDaoTest - Running with Spring Boot v2.6.6, Spring v5.3.18
+2022-04-20 16:25:09.239 [main] DEBUG c.b.c.dao.UserAwardMapDao.queryUserAwardMapList - ==>  Preparing: SELECT uam.user_award_id, uam.create_time, uam.used_status, uam.point, buyer.user_id, buyer.name, s.shop_id, s.shop_name, a.award_id, a.award_name, uam.operator_id AS operator_id FROM tb_user_award_map uam, tb_person_info buyer, tb_shop s, tb_award a WHERE uam.user_id = buyer.user_id and uam.shop_id = s.shop_id and uam.award_id = a.award_id ORDER BY uam.create_time desc LIMIT ?,?;
+2022-04-20 16:25:09.268 [main] DEBUG c.b.c.dao.UserAwardMapDao.queryUserAwardMapList - ==> Parameters: 0(Integer), 3(Integer)
+2022-04-20 16:25:09.327 [main] DEBUG c.b.c.dao.UserAwardMapDao.queryUserAwardMapList - <==      Total: 0
+2022-04-20 16:25:26.677 [main] DEBUG ca.bytetube.communityApp.dao.UserAwardMapDaoTest - Running with Spring Boot v2.6.6, Spring v5.3.18
+2022-04-20 16:25:29.506 [main] DEBUG c.b.c.dao.UserAwardMapDao.insertUserAwardMap - ==>  Preparing: INSERT INTO tb_user_award_map(user_id,award_id,shop_id,operator_id, create_time,used_status,point) VALUES (?,?,?,?, ?,?,?)
+2022-04-20 16:25:29.535 [main] DEBUG c.b.c.dao.UserAwardMapDao.insertUserAwardMap - ==> Parameters: 1(Long), 1(Long), 1(Long), 1(Long), 2022-04-20 16:25:28.882(Timestamp), 1(Integer), 1(Integer)
+2022-04-20 16:25:29.607 [main] DEBUG c.b.c.dao.UserAwardMapDao.insertUserAwardMap - <==    Updates: 1
+2022-04-20 16:25:29.621 [main] DEBUG c.b.c.dao.UserAwardMapDao.insertUserAwardMap - ==>  Preparing: INSERT INTO tb_user_award_map(user_id,award_id,shop_id,operator_id, create_time,used_status,point) VALUES (?,?,?,?, ?,?,?)
+2022-04-20 16:25:29.622 [main] DEBUG c.b.c.dao.UserAwardMapDao.insertUserAwardMap - ==> Parameters: 1(Long), 1(Long), 1(Long), 1(Long), 2022-04-20 16:25:29.621(Timestamp), 0(Integer), 1(Integer)
+2022-04-20 16:25:29.705 [main] DEBUG c.b.c.dao.UserAwardMapDao.insertUserAwardMap - <==    Updates: 1
+2022-04-20 16:26:45.000 [main] DEBUG ca.bytetube.communityApp.dao.UserAwardMapDaoTest - Running with Spring Boot v2.6.6, Spring v5.3.18
+2022-04-20 16:26:47.777 [main] DEBUG c.b.c.dao.UserAwardMapDao.insertUserAwardMap - ==>  Preparing: INSERT INTO tb_user_award_map(user_id,award_id,shop_id,operator_id, create_time,used_status,point) VALUES (?,?,?,?, ?,?,?)
+2022-04-20 16:26:47.805 [main] DEBUG c.b.c.dao.UserAwardMapDao.insertUserAwardMap - ==> Parameters: 1(Long), 1(Long), 1(Long), 1(Long), 2022-04-20 16:26:47.156(Timestamp), 1(Integer), 1(Integer)
+2022-04-20 16:26:47.871 [main] DEBUG c.b.c.dao.UserAwardMapDao.insertUserAwardMap - <==    Updates: 1
+2022-04-20 16:26:47.883 [main] DEBUG c.b.c.dao.UserAwardMapDao.insertUserAwardMap - ==>  Preparing: INSERT INTO tb_user_award_map(user_id,award_id,shop_id,operator_id, create_time,used_status,point) VALUES (?,?,?,?, ?,?,?)
+2022-04-20 16:26:47.883 [main] DEBUG c.b.c.dao.UserAwardMapDao.insertUserAwardMap - ==> Parameters: 1(Long), 1(Long), 1(Long), 1(Long), 2022-04-20 16:26:47.883(Timestamp), 0(Integer), 1(Integer)
+2022-04-20 16:26:47.950 [main] DEBUG c.b.c.dao.UserAwardMapDao.insertUserAwardMap - <==    Updates: 1
+2022-04-20 16:26:47.989 [main] DEBUG c.b.c.dao.UserAwardMapDao.queryUserAwardMapList - ==>  Preparing: SELECT uam.user_award_id, uam.create_time, uam.used_status, uam.point, buyer.user_id, buyer.name, s.shop_id, s.shop_name, a.award_id, a.award_name, uam.operator_id AS operator_id FROM tb_user_award_map uam, tb_person_info buyer, tb_shop s, tb_award a WHERE uam.user_id = buyer.user_id and uam.shop_id = s.shop_id and uam.award_id = a.award_id ORDER BY uam.create_time desc LIMIT ?,?;
+2022-04-20 16:26:47.989 [main] DEBUG c.b.c.dao.UserAwardMapDao.queryUserAwardMapList - ==> Parameters: 0(Integer), 3(Integer)
+2022-04-20 16:26:48.032 [main] DEBUG c.b.c.dao.UserAwardMapDao.queryUserAwardMapList - <==      Total: 2
+2022-04-20 16:26:48.175 [main] DEBUG c.b.c.dao.UserAwardMapDao.queryUserAwardMapCount - ==>  Preparing: SELECT count(1) FROM tb_user_award_map uam, tb_person_info buyer, tb_shop s, tb_award a WHERE uam.user_id = buyer.user_id and uam.shop_id = s.shop_id and uam.award_id = a.award_id
+2022-04-20 16:26:48.176 [main] DEBUG c.b.c.dao.UserAwardMapDao.queryUserAwardMapCount - ==> Parameters: 
+2022-04-20 16:26:48.216 [main] DEBUG c.b.c.dao.UserAwardMapDao.queryUserAwardMapCount - <==      Total: 1
+2022-04-20 16:26:48.221 [main] DEBUG c.b.c.dao.UserAwardMapDao.queryUserAwardMapList - ==>  Preparing: SELECT uam.user_award_id, uam.create_time, uam.used_status, uam.point, buyer.user_id, buyer.name, s.shop_id, s.shop_name, a.award_id, a.award_name, uam.operator_id AS operator_id FROM tb_user_award_map uam, tb_person_info buyer, tb_shop s, tb_award a WHERE uam.user_id = buyer.user_id and uam.shop_id = s.shop_id and uam.award_id = a.award_id and buyer.name like '%test%' ORDER BY uam.create_time desc LIMIT ?,?;
+2022-04-20 16:26:48.222 [main] DEBUG c.b.c.dao.UserAwardMapDao.queryUserAwardMapList - ==> Parameters: 0(Integer), 3(Integer)
+2022-04-20 16:26:48.262 [main] DEBUG c.b.c.dao.UserAwardMapDao.queryUserAwardMapList - <==      Total: 0
+2022-04-20 16:26:48.270 [main] DEBUG c.b.c.dao.UserAwardMapDao.queryUserAwardMapList - ==>  Preparing: SELECT uam.user_award_id, uam.create_time, uam.used_status, uam.point, buyer.user_id, buyer.name, s.shop_id, s.shop_name, a.award_id, a.award_name, uam.operator_id AS operator_id FROM tb_user_award_map uam, tb_person_info buyer, tb_shop s, tb_award a WHERE uam.user_id = buyer.user_id and uam.shop_id = s.shop_id and uam.award_id = a.award_id and buyer.name like '%test%' ORDER BY uam.create_time desc LIMIT ?,?;
+2022-04-20 16:26:48.271 [main] DEBUG c.b.c.dao.UserAwardMapDao.queryUserAwardMapList - ==> Parameters: 0(Integer), 1(Integer)
+2022-04-20 16:26:48.309 [main] DEBUG c.b.c.dao.UserAwardMapDao.queryUserAwardMapList - <==      Total: 0
+2022-04-20 16:27:27.454 [main] DEBUG ca.bytetube.communityApp.dao.UserAwardMapDaoTest - Running with Spring Boot v2.6.6, Spring v5.3.18
+2022-04-20 16:27:30.401 [main] DEBUG c.b.c.dao.UserAwardMapDao.queryUserAwardMapList - ==>  Preparing: SELECT uam.user_award_id, uam.create_time, uam.used_status, uam.point, buyer.user_id, buyer.name, s.shop_id, s.shop_name, a.award_id, a.award_name, uam.operator_id AS operator_id FROM tb_user_award_map uam, tb_person_info buyer, tb_shop s, tb_award a WHERE uam.user_id = buyer.user_id and uam.shop_id = s.shop_id and uam.award_id = a.award_id and buyer.name like '%test%' ORDER BY uam.create_time desc LIMIT ?,?;
+2022-04-20 16:27:30.425 [main] DEBUG c.b.c.dao.UserAwardMapDao.queryUserAwardMapList - ==> Parameters: 0(Integer), 1(Integer)
+2022-04-20 16:27:30.475 [main] DEBUG c.b.c.dao.UserAwardMapDao.queryUserAwardMapList - <==      Total: 0
+2022-04-20 16:28:39.510 [main] DEBUG ca.bytetube.communityApp.dao.UserAwardMapDaoTest - Running with Spring Boot v2.6.6, Spring v5.3.18
+2022-04-20 16:28:42.640 [main] DEBUG c.b.c.dao.UserAwardMapDao.queryUserAwardMapList - ==>  Preparing: SELECT uam.user_award_id, uam.create_time, uam.used_status, uam.point, buyer.user_id, buyer.name, s.shop_id, s.shop_name, a.award_id, a.award_name, uam.operator_id AS operator_id FROM tb_user_award_map uam, tb_person_info buyer, tb_shop s, tb_award a WHERE uam.user_id = buyer.user_id and uam.shop_id = s.shop_id and uam.award_id = a.award_id and buyer.name like '%bytetube%' ORDER BY uam.create_time desc LIMIT ?,?;
+2022-04-20 16:28:42.667 [main] DEBUG c.b.c.dao.UserAwardMapDao.queryUserAwardMapList - ==> Parameters: 0(Integer), 1(Integer)
+2022-04-20 16:28:42.725 [main] DEBUG c.b.c.dao.UserAwardMapDao.queryUserAwardMapList - <==      Total: 1
+2022-04-20 16:28:42.731 [main] DEBUG c.b.c.dao.UserAwardMapDao.updateUserAwardMap - ==>  Preparing: UPDATE tb_user_award_map SET used_status = ?, operator_id=? WHERE user_award_id = ? AND user_id = ?
+2022-04-20 16:28:42.732 [main] DEBUG c.b.c.dao.UserAwardMapDao.updateUserAwardMap - ==> Parameters: 1(Integer), 1(Long), 5(Long), 1(Long)
+2022-04-20 16:28:42.805 [main] DEBUG c.b.c.dao.UserAwardMapDao.updateUserAwardMap - <==    Updates: 1
+2022-04-20 16:29:10.174 [main] DEBUG ca.bytetube.communityApp.dao.UserAwardMapDaoTest - Running with Spring Boot v2.6.6, Spring v5.3.18
+2022-04-20 16:29:13.443 [main] DEBUG c.b.c.dao.UserAwardMapDao.queryUserAwardMapList - ==>  Preparing: SELECT uam.user_award_id, uam.create_time, uam.used_status, uam.point, buyer.user_id, buyer.name, s.shop_id, s.shop_name, a.award_id, a.award_name, uam.operator_id AS operator_id FROM tb_user_award_map uam, tb_person_info buyer, tb_shop s, tb_award a WHERE uam.user_id = buyer.user_id and uam.shop_id = s.shop_id and uam.award_id = a.award_id ORDER BY uam.create_time desc LIMIT ?,?;
+2022-04-20 16:29:13.473 [main] DEBUG c.b.c.dao.UserAwardMapDao.queryUserAwardMapList - ==> Parameters: 0(Integer), 3(Integer)
+2022-04-20 16:29:13.533 [main] DEBUG c.b.c.dao.UserAwardMapDao.queryUserAwardMapList - <==      Total: 2
+2022-04-20 16:29:13.540 [main] DEBUG c.b.c.dao.UserAwardMapDao.queryUserAwardMapCount - ==>  Preparing: SELECT count(1) FROM tb_user_award_map uam, tb_person_info buyer, tb_shop s, tb_award a WHERE uam.user_id = buyer.user_id and uam.shop_id = s.shop_id and uam.award_id = a.award_id
+2022-04-20 16:29:13.540 [main] DEBUG c.b.c.dao.UserAwardMapDao.queryUserAwardMapCount - ==> Parameters: 
+2022-04-20 16:29:13.573 [main] DEBUG c.b.c.dao.UserAwardMapDao.queryUserAwardMapCount - <==      Total: 1
+2022-04-20 16:29:13.576 [main] DEBUG c.b.c.dao.UserAwardMapDao.queryUserAwardMapList - ==>  Preparing: SELECT uam.user_award_id, uam.create_time, uam.used_status, uam.point, buyer.user_id, buyer.name, s.shop_id, s.shop_name, a.award_id, a.award_name, uam.operator_id AS operator_id FROM tb_user_award_map uam, tb_person_info buyer, tb_shop s, tb_award a WHERE uam.user_id = buyer.user_id and uam.shop_id = s.shop_id and uam.award_id = a.award_id and buyer.name like '%bytetube%' ORDER BY uam.create_time desc LIMIT ?,?;
+2022-04-20 16:29:13.577 [main] DEBUG c.b.c.dao.UserAwardMapDao.queryUserAwardMapList - ==> Parameters: 0(Integer), 3(Integer)
+2022-04-20 16:29:13.613 [main] DEBUG c.b.c.dao.UserAwardMapDao.queryUserAwardMapList - <==      Total: 2
+2022-04-20 16:29:13.828 [main] DEBUG c.b.c.dao.UserAwardMapDao.queryUserAwardMapCount - ==>  Preparing: SELECT count(1) FROM tb_user_award_map uam, tb_person_info buyer, tb_shop s, tb_award a WHERE uam.user_id = buyer.user_id and uam.shop_id = s.shop_id and uam.award_id = a.award_id and buyer.name like '%bytetube%'
+2022-04-20 16:29:13.829 [main] DEBUG c.b.c.dao.UserAwardMapDao.queryUserAwardMapCount - ==> Parameters: 
+2022-04-20 16:29:13.891 [main] DEBUG c.b.c.dao.UserAwardMapDao.queryUserAwardMapCount - <==      Total: 1
+2022-04-20 16:29:13.892 [main] DEBUG c.b.c.dao.UserAwardMapDao.queryUserAwardMapById - ==>  Preparing: SELECT uam.user_award_id, uam.create_time, uam.used_status, uam.point, buyer.user_id, buyer.name, s.shop_id, s.shop_name, a.award_id, a.award_name, uam.operator_id AS operator_id FROM tb_user_award_map uam, tb_person_info buyer, tb_shop s, tb_award a WHERE uam.user_id = buyer.user_id and uam.shop_id = s.shop_id and uam.award_id = a.award_id and user_award_id = ?
+2022-04-20 16:29:13.893 [main] DEBUG c.b.c.dao.UserAwardMapDao.queryUserAwardMapById - ==> Parameters: 5(Long)
+2022-04-20 16:29:13.937 [main] DEBUG c.b.c.dao.UserAwardMapDao.queryUserAwardMapById - <==      Total: 1
+2022-04-20 16:29:48.098 [main] DEBUG ca.bytetube.communityApp.dao.UserAwardMapDaoTest - Running with Spring Boot v2.6.6, Spring v5.3.18
+2022-04-20 16:29:51.123 [main] DEBUG c.b.c.dao.UserAwardMapDao.insertUserAwardMap - ==>  Preparing: INSERT INTO tb_user_award_map(user_id,award_id,shop_id,operator_id, create_time,used_status,point) VALUES (?,?,?,?, ?,?,?)
+2022-04-20 16:29:51.153 [main] DEBUG c.b.c.dao.UserAwardMapDao.insertUserAwardMap - ==> Parameters: 1(Long), 1(Long), 1(Long), 1(Long), 2022-04-20 16:29:50.429(Timestamp), 1(Integer), 1(Integer)
+2022-04-20 16:29:51.259 [main] DEBUG c.b.c.dao.UserAwardMapDao.insertUserAwardMap - <==    Updates: 1
+2022-04-20 16:29:51.276 [main] DEBUG c.b.c.dao.UserAwardMapDao.insertUserAwardMap - ==>  Preparing: INSERT INTO tb_user_award_map(user_id,award_id,shop_id,operator_id, create_time,used_status,point) VALUES (?,?,?,?, ?,?,?)
+2022-04-20 16:29:51.277 [main] DEBUG c.b.c.dao.UserAwardMapDao.insertUserAwardMap - ==> Parameters: 1(Long), 1(Long), 1(Long), 1(Long), 2022-04-20 16:29:51.276(Timestamp), 0(Integer), 1(Integer)
+2022-04-20 16:29:51.357 [main] DEBUG c.b.c.dao.UserAwardMapDao.insertUserAwardMap - <==    Updates: 1
+2022-04-20 16:29:51.395 [main] DEBUG c.b.c.dao.UserAwardMapDao.queryUserAwardMapList - ==>  Preparing: SELECT uam.user_award_id, uam.create_time, uam.used_status, uam.point, buyer.user_id, buyer.name, s.shop_id, s.shop_name, a.award_id, a.award_name, uam.operator_id AS operator_id FROM tb_user_award_map uam, tb_person_info buyer, tb_shop s, tb_award a WHERE uam.user_id = buyer.user_id and uam.shop_id = s.shop_id and uam.award_id = a.award_id ORDER BY uam.create_time desc LIMIT ?,?;
+2022-04-20 16:29:51.396 [main] DEBUG c.b.c.dao.UserAwardMapDao.queryUserAwardMapList - ==> Parameters: 0(Integer), 3(Integer)
+2022-04-20 16:29:51.534 [main] DEBUG c.b.c.dao.UserAwardMapDao.queryUserAwardMapList - <==      Total: 2
+2022-04-20 16:29:51.552 [main] DEBUG c.b.c.dao.UserAwardMapDao.queryUserAwardMapCount - ==>  Preparing: SELECT count(1) FROM tb_user_award_map uam, tb_person_info buyer, tb_shop s, tb_award a WHERE uam.user_id = buyer.user_id and uam.shop_id = s.shop_id and uam.award_id = a.award_id
+2022-04-20 16:29:51.552 [main] DEBUG c.b.c.dao.UserAwardMapDao.queryUserAwardMapCount - ==> Parameters: 
+2022-04-20 16:29:51.590 [main] DEBUG c.b.c.dao.UserAwardMapDao.queryUserAwardMapCount - <==      Total: 1
+2022-04-20 16:29:51.595 [main] DEBUG c.b.c.dao.UserAwardMapDao.queryUserAwardMapList - ==>  Preparing: SELECT uam.user_award_id, uam.create_time, uam.used_status, uam.point, buyer.user_id, buyer.name, s.shop_id, s.shop_name, a.award_id, a.award_name, uam.operator_id AS operator_id FROM tb_user_award_map uam, tb_person_info buyer, tb_shop s, tb_award a WHERE uam.user_id = buyer.user_id and uam.shop_id = s.shop_id and uam.award_id = a.award_id and buyer.name like '%bytetube%' ORDER BY uam.create_time desc LIMIT ?,?;
+2022-04-20 16:29:51.596 [main] DEBUG c.b.c.dao.UserAwardMapDao.queryUserAwardMapList - ==> Parameters: 0(Integer), 3(Integer)
+2022-04-20 16:29:51.634 [main] DEBUG c.b.c.dao.UserAwardMapDao.queryUserAwardMapList - <==      Total: 2
+2022-04-20 16:29:51.635 [main] DEBUG c.b.c.dao.UserAwardMapDao.queryUserAwardMapCount - ==>  Preparing: SELECT count(1) FROM tb_user_award_map uam, tb_person_info buyer, tb_shop s, tb_award a WHERE uam.user_id = buyer.user_id and uam.shop_id = s.shop_id and uam.award_id = a.award_id and buyer.name like '%bytetube%'
+2022-04-20 16:29:51.635 [main] DEBUG c.b.c.dao.UserAwardMapDao.queryUserAwardMapCount - ==> Parameters: 
+2022-04-20 16:29:51.671 [main] DEBUG c.b.c.dao.UserAwardMapDao.queryUserAwardMapCount - <==      Total: 1
+2022-04-20 16:29:51.952 [main] DEBUG c.b.c.dao.UserAwardMapDao.queryUserAwardMapById - ==>  Preparing: SELECT uam.user_award_id, uam.create_time, uam.used_status, uam.point, buyer.user_id, buyer.name, s.shop_id, s.shop_name, a.award_id, a.award_name, uam.operator_id AS operator_id FROM tb_user_award_map uam, tb_person_info buyer, tb_shop s, tb_award a WHERE uam.user_id = buyer.user_id and uam.shop_id = s.shop_id and uam.award_id = a.award_id and user_award_id = ?
+2022-04-20 16:29:51.953 [main] DEBUG c.b.c.dao.UserAwardMapDao.queryUserAwardMapById - ==> Parameters: 7(Long)
+2022-04-20 16:29:51.991 [main] DEBUG c.b.c.dao.UserAwardMapDao.queryUserAwardMapById - <==      Total: 1
+2022-04-20 16:29:52.001 [main] DEBUG c.b.c.dao.UserAwardMapDao.queryUserAwardMapList - ==>  Preparing: SELECT uam.user_award_id, uam.create_time, uam.used_status, uam.point, buyer.user_id, buyer.name, s.shop_id, s.shop_name, a.award_id, a.award_name, uam.operator_id AS operator_id FROM tb_user_award_map uam, tb_person_info buyer, tb_shop s, tb_award a WHERE uam.user_id = buyer.user_id and uam.shop_id = s.shop_id and uam.award_id = a.award_id and buyer.name like '%bytetube%' ORDER BY uam.create_time desc LIMIT ?,?;
+2022-04-20 16:29:52.001 [main] DEBUG c.b.c.dao.UserAwardMapDao.queryUserAwardMapList - ==> Parameters: 0(Integer), 1(Integer)
+2022-04-20 16:29:52.035 [main] DEBUG c.b.c.dao.UserAwardMapDao.queryUserAwardMapList - <==      Total: 1
+2022-04-20 16:29:52.036 [main] DEBUG c.b.c.dao.UserAwardMapDao.updateUserAwardMap - ==>  Preparing: UPDATE tb_user_award_map SET used_status = ?, operator_id=? WHERE user_award_id = ? AND user_id = ?
+2022-04-20 16:29:52.037 [main] DEBUG c.b.c.dao.UserAwardMapDao.updateUserAwardMap - ==> Parameters: 1(Integer), 1(Long), 7(Long), 1(Long)
+2022-04-20 16:29:52.122 [main] DEBUG c.b.c.dao.UserAwardMapDao.updateUserAwardMap - <==    Updates: 1
+2022-04-20 16:30:17.055 [main] DEBUG ca.bytetube.communityApp.dao.UserAwardMapDaoTest - Running with Spring Boot v2.6.6, Spring v5.3.18
+2022-04-20 16:30:19.915 [main] DEBUG c.b.c.dao.UserAwardMapDao.insertUserAwardMap - ==>  Preparing: INSERT INTO tb_user_award_map(user_id,award_id,shop_id,operator_id, create_time,used_status,point) VALUES (?,?,?,?, ?,?,?)
+2022-04-20 16:30:19.945 [main] DEBUG c.b.c.dao.UserAwardMapDao.insertUserAwardMap - ==> Parameters: 1(Long), 1(Long), 1(Long), 1(Long), 2022-04-20 16:30:19.294(Timestamp), 1(Integer), 1(Integer)
+2022-04-20 16:30:20.037 [main] DEBUG c.b.c.dao.UserAwardMapDao.insertUserAwardMap - <==    Updates: 1
+2022-04-20 16:30:20.050 [main] DEBUG c.b.c.dao.UserAwardMapDao.insertUserAwardMap - ==>  Preparing: INSERT INTO tb_user_award_map(user_id,award_id,shop_id,operator_id, create_time,used_status,point) VALUES (?,?,?,?, ?,?,?)
+2022-04-20 16:30:20.051 [main] DEBUG c.b.c.dao.UserAwardMapDao.insertUserAwardMap - ==> Parameters: 1(Long), 1(Long), 1(Long), 1(Long), 2022-04-20 16:30:20.05(Timestamp), 0(Integer), 1(Integer)
+2022-04-20 16:30:20.133 [main] DEBUG c.b.c.dao.UserAwardMapDao.insertUserAwardMap - <==    Updates: 1
+2022-04-20 16:30:20.167 [main] DEBUG c.b.c.dao.UserAwardMapDao.queryUserAwardMapList - ==>  Preparing: SELECT uam.user_award_id, uam.create_time, uam.used_status, uam.point, buyer.user_id, buyer.name, s.shop_id, s.shop_name, a.award_id, a.award_name, uam.operator_id AS operator_id FROM tb_user_award_map uam, tb_person_info buyer, tb_shop s, tb_award a WHERE uam.user_id = buyer.user_id and uam.shop_id = s.shop_id and uam.award_id = a.award_id ORDER BY uam.create_time desc LIMIT ?,?;
+2022-04-20 16:30:20.168 [main] DEBUG c.b.c.dao.UserAwardMapDao.queryUserAwardMapList - ==> Parameters: 0(Integer), 3(Integer)
+2022-04-20 16:30:20.218 [main] DEBUG c.b.c.dao.UserAwardMapDao.queryUserAwardMapList - <==      Total: 3
+2022-04-20 16:30:20.318 [main] DEBUG c.b.c.dao.UserAwardMapDao.queryUserAwardMapList - ==>  Preparing: SELECT uam.user_award_id, uam.create_time, uam.used_status, uam.point, buyer.user_id, buyer.name, s.shop_id, s.shop_name, a.award_id, a.award_name, uam.operator_id AS operator_id FROM tb_user_award_map uam, tb_person_info buyer, tb_shop s, tb_award a WHERE uam.user_id = buyer.user_id and uam.shop_id = s.shop_id and uam.award_id = a.award_id and buyer.name like '%bytetube%' ORDER BY uam.create_time desc LIMIT ?,?;
+2022-04-20 16:30:20.318 [main] DEBUG c.b.c.dao.UserAwardMapDao.queryUserAwardMapList - ==> Parameters: 0(Integer), 1(Integer)
+2022-04-20 16:30:20.361 [main] DEBUG c.b.c.dao.UserAwardMapDao.queryUserAwardMapList - <==      Total: 1
+2022-04-20 16:30:20.362 [main] DEBUG c.b.c.dao.UserAwardMapDao.updateUserAwardMap - ==>  Preparing: UPDATE tb_user_award_map SET used_status = ?, operator_id=? WHERE user_award_id = ? AND user_id = ?
+2022-04-20 16:30:20.362 [main] DEBUG c.b.c.dao.UserAwardMapDao.updateUserAwardMap - ==> Parameters: 1(Integer), 1(Long), 9(Long), 1(Long)
+2022-04-20 16:30:20.450 [main] DEBUG c.b.c.dao.UserAwardMapDao.updateUserAwardMap - <==    Updates: 1
+2022-04-20 16:30:33.099 [main] DEBUG ca.bytetube.communityApp.dao.UserAwardMapDaoTest - Running with Spring Boot v2.6.6, Spring v5.3.18
+2022-04-20 16:30:36.187 [main] DEBUG c.b.c.dao.UserAwardMapDao.insertUserAwardMap - ==>  Preparing: INSERT INTO tb_user_award_map(user_id,award_id,shop_id,operator_id, create_time,used_status,point) VALUES (?,?,?,?, ?,?,?)
+2022-04-20 16:30:36.220 [main] DEBUG c.b.c.dao.UserAwardMapDao.insertUserAwardMap - ==> Parameters: 1(Long), 1(Long), 1(Long), 1(Long), 2022-04-20 16:30:35.534(Timestamp), 1(Integer), 1(Integer)
+2022-04-20 16:30:36.323 [main] DEBUG c.b.c.dao.UserAwardMapDao.insertUserAwardMap - <==    Updates: 1
+2022-04-20 16:30:36.338 [main] DEBUG c.b.c.dao.UserAwardMapDao.insertUserAwardMap - ==>  Preparing: INSERT INTO tb_user_award_map(user_id,award_id,shop_id,operator_id, create_time,used_status,point) VALUES (?,?,?,?, ?,?,?)
+2022-04-20 16:30:36.339 [main] DEBUG c.b.c.dao.UserAwardMapDao.insertUserAwardMap - ==> Parameters: 1(Long), 1(Long), 1(Long), 1(Long), 2022-04-20 16:30:36.338(Timestamp), 0(Integer), 1(Integer)
+2022-04-20 16:30:36.413 [main] DEBUG c.b.c.dao.UserAwardMapDao.insertUserAwardMap - <==    Updates: 1
+2022-04-20 16:30:36.451 [main] DEBUG c.b.c.dao.UserAwardMapDao.queryUserAwardMapList - ==>  Preparing: SELECT uam.user_award_id, uam.create_time, uam.used_status, uam.point, buyer.user_id, buyer.name, s.shop_id, s.shop_name, a.award_id, a.award_name, uam.operator_id AS operator_id FROM tb_user_award_map uam, tb_person_info buyer, tb_shop s, tb_award a WHERE uam.user_id = buyer.user_id and uam.shop_id = s.shop_id and uam.award_id = a.award_id ORDER BY uam.create_time desc LIMIT ?,?;
+2022-04-20 16:30:36.451 [main] DEBUG c.b.c.dao.UserAwardMapDao.queryUserAwardMapList - ==> Parameters: 0(Integer), 3(Integer)
+2022-04-20 16:30:36.493 [main] DEBUG c.b.c.dao.UserAwardMapDao.queryUserAwardMapList - <==      Total: 2
+2022-04-20 16:30:36.612 [main] DEBUG c.b.c.dao.UserAwardMapDao.queryUserAwardMapCount - ==>  Preparing: SELECT count(1) FROM tb_user_award_map uam, tb_person_info buyer, tb_shop s, tb_award a WHERE uam.user_id = buyer.user_id and uam.shop_id = s.shop_id and uam.award_id = a.award_id
+2022-04-20 16:30:36.613 [main] DEBUG c.b.c.dao.UserAwardMapDao.queryUserAwardMapCount - ==> Parameters: 
+2022-04-20 16:30:36.650 [main] DEBUG c.b.c.dao.UserAwardMapDao.queryUserAwardMapCount - <==      Total: 1
+2022-04-20 16:30:36.653 [main] DEBUG c.b.c.dao.UserAwardMapDao.queryUserAwardMapList - ==>  Preparing: SELECT uam.user_award_id, uam.create_time, uam.used_status, uam.point, buyer.user_id, buyer.name, s.shop_id, s.shop_name, a.award_id, a.award_name, uam.operator_id AS operator_id FROM tb_user_award_map uam, tb_person_info buyer, tb_shop s, tb_award a WHERE uam.user_id = buyer.user_id and uam.shop_id = s.shop_id and uam.award_id = a.award_id and buyer.name like '%bytetube%' ORDER BY uam.create_time desc LIMIT ?,?;
+2022-04-20 16:30:36.653 [main] DEBUG c.b.c.dao.UserAwardMapDao.queryUserAwardMapList - ==> Parameters: 0(Integer), 3(Integer)
+2022-04-20 16:30:36.690 [main] DEBUG c.b.c.dao.UserAwardMapDao.queryUserAwardMapList - <==      Total: 2
+2022-04-20 16:30:36.692 [main] DEBUG c.b.c.dao.UserAwardMapDao.queryUserAwardMapCount - ==>  Preparing: SELECT count(1) FROM tb_user_award_map uam, tb_person_info buyer, tb_shop s, tb_award a WHERE uam.user_id = buyer.user_id and uam.shop_id = s.shop_id and uam.award_id = a.award_id and buyer.name like '%bytetube%'
+2022-04-20 16:30:36.692 [main] DEBUG c.b.c.dao.UserAwardMapDao.queryUserAwardMapCount - ==> Parameters: 
+2022-04-20 16:30:36.726 [main] DEBUG c.b.c.dao.UserAwardMapDao.queryUserAwardMapCount - <==      Total: 1
+2022-04-20 16:30:37.046 [main] DEBUG c.b.c.dao.UserAwardMapDao.queryUserAwardMapById - ==>  Preparing: SELECT uam.user_award_id, uam.create_time, uam.used_status, uam.point, buyer.user_id, buyer.name, s.shop_id, s.shop_name, a.award_id, a.award_name, uam.operator_id AS operator_id FROM tb_user_award_map uam, tb_person_info buyer, tb_shop s, tb_award a WHERE uam.user_id = buyer.user_id and uam.shop_id = s.shop_id and uam.award_id = a.award_id and user_award_id = ?
+2022-04-20 16:30:37.047 [main] DEBUG c.b.c.dao.UserAwardMapDao.queryUserAwardMapById - ==> Parameters: 11(Long)
+2022-04-20 16:30:37.086 [main] DEBUG c.b.c.dao.UserAwardMapDao.queryUserAwardMapById - <==      Total: 1
+2022-04-20 16:30:37.109 [main] DEBUG c.b.c.dao.UserAwardMapDao.queryUserAwardMapList - ==>  Preparing: SELECT uam.user_award_id, uam.create_time, uam.used_status, uam.point, buyer.user_id, buyer.name, s.shop_id, s.shop_name, a.award_id, a.award_name, uam.operator_id AS operator_id FROM tb_user_award_map uam, tb_person_info buyer, tb_shop s, tb_award a WHERE uam.user_id = buyer.user_id and uam.shop_id = s.shop_id and uam.award_id = a.award_id and buyer.name like '%bytetube%' ORDER BY uam.create_time desc LIMIT ?,?;
+2022-04-20 16:30:37.110 [main] DEBUG c.b.c.dao.UserAwardMapDao.queryUserAwardMapList - ==> Parameters: 0(Integer), 1(Integer)
+2022-04-20 16:30:37.159 [main] DEBUG c.b.c.dao.UserAwardMapDao.queryUserAwardMapList - <==      Total: 1
+2022-04-20 16:30:37.160 [main] DEBUG c.b.c.dao.UserAwardMapDao.updateUserAwardMap - ==>  Preparing: UPDATE tb_user_award_map SET used_status = ?, operator_id=? WHERE user_award_id = ? AND user_id = ?
+2022-04-20 16:30:37.161 [main] DEBUG c.b.c.dao.UserAwardMapDao.updateUserAwardMap - ==> Parameters: 1(Integer), 1(Long), 11(Long), 1(Long)
+2022-04-20 16:30:37.234 [main] DEBUG c.b.c.dao.UserAwardMapDao.updateUserAwardMap - <==    Updates: 1
