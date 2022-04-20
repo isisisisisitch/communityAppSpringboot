@@ -603,3 +603,40 @@
 2022-04-20 17:42:29.150 [main] DEBUG c.b.c.dao.UserShopMapDao.updateUserShopMapPoint - ==>  Preparing: UPDATE tb_user_shop_map SET point=? where user_id = ? AND shop_id = ?
 2022-04-20 17:42:29.150 [main] DEBUG c.b.c.dao.UserShopMapDao.updateUserShopMapPoint - ==> Parameters: 2(Integer), 1(Long), 1(Long)
 2022-04-20 17:42:29.246 [main] DEBUG c.b.c.dao.UserShopMapDao.updateUserShopMapPoint - <==    Updates: 1
+2022-04-20 17:47:34.804 [main] DEBUG ca.bytetube.communityApp.dao.ShopAuthMapDaoTest - Running with Spring Boot v2.6.6, Spring v5.3.18
+2022-04-20 17:47:37.724 [main] DEBUG c.b.c.dao.ShopAuthMapDao.insertShopAuthMap - ==>  Preparing: INSERT INTO tb_shop_auth_map(employee_id,shop_id, title,title_flag,create_time,last_edit_time,enable_status) VALUES (?,?, ?,?,?,?,?)
+2022-04-20 17:47:37.764 [main] DEBUG c.b.c.dao.ShopAuthMapDao.insertShopAuthMap - ==> Parameters: 1(Long), 1(Long), manager(String), 1(Integer), 2022-04-20 17:47:37.07(Timestamp), 2022-04-20 17:47:37.07(Timestamp), 1(Integer)
+2022-04-20 17:47:37.847 [main] DEBUG c.b.c.dao.ShopAuthMapDao.insertShopAuthMap - <==    Updates: 1
+2022-04-20 17:47:37.849 [main] DEBUG c.b.c.dao.ShopAuthMapDao.insertShopAuthMap - ==>  Preparing: INSERT INTO tb_shop_auth_map(employee_id,shop_id, title,title_flag,create_time,last_edit_time,enable_status) VALUES (?,?, ?,?,?,?,?)
+2022-04-20 17:47:37.849 [main] DEBUG c.b.c.dao.ShopAuthMapDao.insertShopAuthMap - ==> Parameters: 1(Long), 2(Long), employee(String), 2(Integer), 2022-04-20 17:47:37.849(Timestamp), 2022-04-20 17:47:37.849(Timestamp), 0(Integer)
+2022-04-20 17:47:37.932 [main] DEBUG c.b.c.dao.ShopAuthMapDao.insertShopAuthMap - <==    Updates: 1
+2022-04-20 17:48:05.611 [main] DEBUG ca.bytetube.communityApp.dao.ShopAuthMapDaoTest - Running with Spring Boot v2.6.6, Spring v5.3.18
+2022-04-20 17:48:08.547 [main] DEBUG c.b.c.d.S.queryShopAuthMapListByShopId - ==>  Preparing: SELECT smap.shop_auth_id, smap.title, smap.title_flag, smap.create_time, smap.last_edit_time, smap.enable_status, p.user_id, p.name, s.shop_id, s.shop_name FROM tb_shop_auth_map smap, tb_person_info p, tb_shop s WHERE smap.employee_id = p.user_id AND smap.shop_id = s.shop_id AND smap.shop_id = ? LIMIT ?,?;
+2022-04-20 17:48:08.573 [main] DEBUG c.b.c.d.S.queryShopAuthMapListByShopId - ==> Parameters: 1(Long), 0(Integer), 2(Integer)
+2022-04-20 17:48:08.628 [main] DEBUG c.b.c.d.S.queryShopAuthMapListByShopId - <==      Total: 1
+2022-04-20 17:48:08.633 [main] DEBUG c.b.c.dao.ShopAuthMapDao.queryShopAuthMapById - ==>  Preparing: SELECT smap.shop_auth_id, smap.title, smap.title_flag, smap.create_time, smap.last_edit_time, smap.enable_status, p.user_id, p.name, s.shop_id, s.shop_name FROM tb_shop_auth_map smap, tb_person_info p, tb_shop s WHERE smap.employee_id = p.user_id AND smap.shop_id = s.shop_id AND smap.shop_auth_id = ?;
+2022-04-20 17:48:08.634 [main] DEBUG c.b.c.dao.ShopAuthMapDao.queryShopAuthMapById - ==> Parameters: 1(Long)
+2022-04-20 17:48:08.674 [main] DEBUG c.b.c.dao.ShopAuthMapDao.queryShopAuthMapById - <==      Total: 1
+2022-04-20 17:48:08.675 [main] DEBUG c.b.c.d.ShopAuthMapDao.queryShopAuthCountByShopId - ==>  Preparing: SELECT count(1) FROM tb_shop_auth_map smap, tb_person_info p, tb_shop s WHERE smap.employee_id = p.user_id AND smap.shop_id = s.shop_id AND smap.shop_id = ?
+2022-04-20 17:48:08.675 [main] DEBUG c.b.c.d.ShopAuthMapDao.queryShopAuthCountByShopId - ==> Parameters: 1(Long)
+2022-04-20 17:48:08.713 [main] DEBUG c.b.c.d.ShopAuthMapDao.queryShopAuthCountByShopId - <==      Total: 1
+2022-04-20 17:49:32.168 [main] DEBUG ca.bytetube.communityApp.dao.ShopAuthMapDaoTest - Running with Spring Boot v2.6.6, Spring v5.3.18
+2022-04-20 17:49:35.060 [main] DEBUG c.b.c.d.S.queryShopAuthMapListByShopId - ==>  Preparing: SELECT smap.shop_auth_id, smap.title, smap.title_flag, smap.create_time, smap.last_edit_time, smap.enable_status, p.user_id, p.name, s.shop_id, s.shop_name FROM tb_shop_auth_map smap, tb_person_info p, tb_shop s WHERE smap.employee_id = p.user_id AND smap.shop_id = s.shop_id AND smap.shop_id = ? LIMIT ?,?;
+2022-04-20 17:49:35.087 [main] DEBUG c.b.c.d.S.queryShopAuthMapListByShopId - ==> Parameters: 1(Long), 0(Integer), 1(Integer)
+2022-04-20 17:49:35.140 [main] DEBUG c.b.c.d.S.queryShopAuthMapListByShopId - <==      Total: 1
+2022-04-20 17:49:35.162 [main] DEBUG c.b.c.dao.ShopAuthMapDao.updateShopAuthMap - ==>  Preparing: UPDATE tb_shop_auth_map SET title=?, title_flag=?, enable_status=?, last_edit_time=? WHERE shop_auth_id=?
+2022-04-20 17:49:35.166 [main] DEBUG c.b.c.dao.ShopAuthMapDao.updateShopAuthMap - ==> Parameters: employee(String), 2(Integer), 1(Integer), 2022-04-20 17:47:37.0(Timestamp), 1(Long)
+2022-04-20 17:49:35.235 [main] DEBUG c.b.c.dao.ShopAuthMapDao.updateShopAuthMap - <==    Updates: 1
+2022-04-20 17:49:43.521 [main] DEBUG ca.bytetube.communityApp.dao.ShopAuthMapDaoTest - Running with Spring Boot v2.6.6, Spring v5.3.18
+2022-04-20 17:49:46.693 [main] DEBUG c.b.c.d.S.queryShopAuthMapListByShopId - ==>  Preparing: SELECT smap.shop_auth_id, smap.title, smap.title_flag, smap.create_time, smap.last_edit_time, smap.enable_status, p.user_id, p.name, s.shop_id, s.shop_name FROM tb_shop_auth_map smap, tb_person_info p, tb_shop s WHERE smap.employee_id = p.user_id AND smap.shop_id = s.shop_id AND smap.shop_id = ? LIMIT ?,?;
+2022-04-20 17:49:46.721 [main] DEBUG c.b.c.d.S.queryShopAuthMapListByShopId - ==> Parameters: 1(Long), 0(Integer), 1(Integer)
+2022-04-20 17:49:46.782 [main] DEBUG c.b.c.d.S.queryShopAuthMapListByShopId - <==      Total: 1
+2022-04-20 17:49:46.787 [main] DEBUG c.b.c.d.S.queryShopAuthMapListByShopId - ==>  Preparing: SELECT smap.shop_auth_id, smap.title, smap.title_flag, smap.create_time, smap.last_edit_time, smap.enable_status, p.user_id, p.name, s.shop_id, s.shop_name FROM tb_shop_auth_map smap, tb_person_info p, tb_shop s WHERE smap.employee_id = p.user_id AND smap.shop_id = s.shop_id AND smap.shop_id = ? LIMIT ?,?;
+2022-04-20 17:49:46.788 [main] DEBUG c.b.c.d.S.queryShopAuthMapListByShopId - ==> Parameters: 2(Long), 0(Integer), 1(Integer)
+2022-04-20 17:49:46.824 [main] DEBUG c.b.c.d.S.queryShopAuthMapListByShopId - <==      Total: 1
+2022-04-20 17:49:46.825 [main] DEBUG c.b.c.dao.ShopAuthMapDao.deleteShopAuthMap - ==>  Preparing: DELETE FROM tb_shop_auth_map WHERE shop_auth_id = ?
+2022-04-20 17:49:46.825 [main] DEBUG c.b.c.dao.ShopAuthMapDao.deleteShopAuthMap - ==> Parameters: 1(Long)
+2022-04-20 17:49:46.901 [main] DEBUG c.b.c.dao.ShopAuthMapDao.deleteShopAuthMap - <==    Updates: 1
+2022-04-20 17:49:47.081 [main] DEBUG c.b.c.dao.ShopAuthMapDao.deleteShopAuthMap - ==>  Preparing: DELETE FROM tb_shop_auth_map WHERE shop_auth_id = ?
+2022-04-20 17:49:47.082 [main] DEBUG c.b.c.dao.ShopAuthMapDao.deleteShopAuthMap - ==> Parameters: 2(Long)
+2022-04-20 17:49:47.160 [main] DEBUG c.b.c.dao.ShopAuthMapDao.deleteShopAuthMap - <==    Updates: 1

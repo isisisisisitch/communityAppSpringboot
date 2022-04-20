@@ -139,3 +139,15 @@
 2022-04-20 17:42:25.247 [main] INFO  ca.bytetube.communityApp.dao.UserShopMapDaoTest - Starting UserShopMapDaoTest using Java 1.8.0_241 on dalluos-mbp with PID 18880 (started by dal in /Users/dalluo/Desktop/IdeaProjects/communityApp)
 2022-04-20 17:42:25.248 [main] INFO  ca.bytetube.communityApp.dao.UserShopMapDaoTest - No active profile set, falling back to 1 default profile: "default"
 2022-04-20 17:42:27.417 [main] INFO  ca.bytetube.communityApp.dao.UserShopMapDaoTest - Started UserShopMapDaoTest in 2.523 seconds (JVM running for 3.352)
+2022-04-20 17:47:34.803 [main] INFO  ca.bytetube.communityApp.dao.ShopAuthMapDaoTest - Starting ShopAuthMapDaoTest using Java 1.8.0_241 on dalluos-mbp with PID 18944 (started by dal in /Users/dalluo/Desktop/IdeaProjects/communityApp)
+2022-04-20 17:47:34.805 [main] INFO  ca.bytetube.communityApp.dao.ShopAuthMapDaoTest - No active profile set, falling back to 1 default profile: "default"
+2022-04-20 17:47:36.881 [main] INFO  ca.bytetube.communityApp.dao.ShopAuthMapDaoTest - Started ShopAuthMapDaoTest in 2.378 seconds (JVM running for 3.166)
+2022-04-20 17:48:05.610 [main] INFO  ca.bytetube.communityApp.dao.ShopAuthMapDaoTest - Starting ShopAuthMapDaoTest using Java 1.8.0_241 on dalluos-mbp with PID 18952 (started by dal in /Users/dalluo/Desktop/IdeaProjects/communityApp)
+2022-04-20 17:48:05.611 [main] INFO  ca.bytetube.communityApp.dao.ShopAuthMapDaoTest - No active profile set, falling back to 1 default profile: "default"
+2022-04-20 17:48:07.739 [main] INFO  ca.bytetube.communityApp.dao.ShopAuthMapDaoTest - Started ShopAuthMapDaoTest in 2.434 seconds (JVM running for 3.314)
+2022-04-20 17:49:32.167 [main] INFO  ca.bytetube.communityApp.dao.ShopAuthMapDaoTest - Starting ShopAuthMapDaoTest using Java 1.8.0_241 on dalluos-mbp with PID 18962 (started by dal in /Users/dalluo/Desktop/IdeaProjects/communityApp)
+2022-04-20 17:49:32.169 [main] INFO  ca.bytetube.communityApp.dao.ShopAuthMapDaoTest - No active profile set, falling back to 1 default profile: "default"
+2022-04-20 17:49:34.259 [main] INFO  ca.bytetube.communityApp.dao.ShopAuthMapDaoTest - Started ShopAuthMapDaoTest in 2.367 seconds (JVM running for 3.118)
+2022-04-20 17:49:43.520 [main] INFO  ca.bytetube.communityApp.dao.ShopAuthMapDaoTest - Starting ShopAuthMapDaoTest using Java 1.8.0_241 on dalluos-mbp with PID 18968 (started by dal in /Users/dalluo/Desktop/IdeaProjects/communityApp)
+2022-04-20 17:49:43.522 [main] INFO  ca.bytetube.communityApp.dao.ShopAuthMapDaoTest - No active profile set, falling back to 1 default profile: "default"
+2022-04-20 17:49:45.812 [main] INFO  ca.bytetube.communityApp.dao.ShopAuthMapDaoTest - Started ShopAuthMapDaoTest in 2.558 seconds (JVM running for 3.389)
