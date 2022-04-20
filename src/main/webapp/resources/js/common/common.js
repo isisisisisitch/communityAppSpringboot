@@ -37,3 +37,11 @@ function getQueryString(name) {
 	}
 	return '';
 }
+
+/**
+ * 获取项目的ContextPath以便修正图片路由让其正常显示
+ * @returns
+ */
+function getContextPath(){
+	return "/communityApp/";
+}
