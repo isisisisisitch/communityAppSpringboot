@@ -13,3 +13,21 @@
 2022-04-20 12:51:18.803 [main] INFO  ca.bytetube.communityApp.CommunityappApplication - Starting CommunityappApplication using Java 1.8.0_241 on dalluos-mbp with PID 17321 (/Users/dalluo/Desktop/IdeaProjects/communityApp/target/classes started by dal in /Users/dalluo/Desktop/IdeaProjects/communityApp)
 2022-04-20 12:51:18.807 [main] INFO  ca.bytetube.communityApp.CommunityappApplication - No active profile set, falling back to 1 default profile: "default"
 2022-04-20 12:51:20.574 [main] INFO  ca.bytetube.communityApp.CommunityappApplication - Started CommunityappApplication in 2.07 seconds (JVM running for 2.602)
+2022-04-20 14:50:45.215 [main] INFO  ca.bytetube.communityApp.CommunityappApplication - Starting CommunityappApplication using Java 1.8.0_241 on dalluos-mbp with PID 17597 (/Users/dalluo/Desktop/IdeaProjects/communityApp/target/classes started by dal in /Users/dalluo/Desktop/IdeaProjects/communityApp)
+2022-04-20 14:50:45.218 [main] INFO  ca.bytetube.communityApp.CommunityappApplication - No active profile set, falling back to 1 default profile: "default"
+2022-04-20 14:50:46.845 [main] INFO  ca.bytetube.communityApp.CommunityappApplication - Started CommunityappApplication in 1.932 seconds (JVM running for 2.688)
+2022-04-20 14:52:31.017 [main] INFO  c.b.communityApp.CommunityappApplicationTests - Starting CommunityappApplicationTests using Java 1.8.0_241 on dalluos-mbp with PID 17620 (started by dal in /Users/dalluo/Desktop/IdeaProjects/communityApp)
+2022-04-20 14:52:31.017 [main] INFO  c.b.communityApp.CommunityappApplicationTests - No active profile set, falling back to 1 default profile: "default"
+2022-04-20 14:52:33.072 [main] INFO  c.b.communityApp.CommunityappApplicationTests - Started CommunityappApplicationTests in 2.283 seconds (JVM running for 3.089)
+2022-04-20 14:53:14.733 [main] INFO  c.b.communityApp.CommunityappApplicationTests - Starting CommunityappApplicationTests using Java 1.8.0_241 on dalluos-mbp with PID 17648 (started by dal in /Users/dalluo/Desktop/IdeaProjects/communityApp)
+2022-04-20 14:53:14.734 [main] INFO  c.b.communityApp.CommunityappApplicationTests - No active profile set, falling back to 1 default profile: "default"
+2022-04-20 14:53:17.040 [main] INFO  c.b.communityApp.CommunityappApplicationTests - Started CommunityappApplicationTests in 2.579 seconds (JVM running for 3.455)
+2022-04-20 14:55:53.839 [main] INFO  c.b.communityApp.CommunityappApplicationTests - Starting CommunityappApplicationTests using Java 1.8.0_241 on dalluos-mbp with PID 17685 (started by dal in /Users/dalluo/Desktop/IdeaProjects/communityApp)
+2022-04-20 14:55:53.841 [main] INFO  c.b.communityApp.CommunityappApplicationTests - No active profile set, falling back to 1 default profile: "default"
+2022-04-20 14:55:56.515 [main] INFO  c.b.communityApp.CommunityappApplicationTests - Started CommunityappApplicationTests in 3.004 seconds (JVM running for 4.303)
+2022-04-20 14:59:51.192 [main] INFO  c.b.communityApp.CommunityappApplicationTests - Starting CommunityappApplicationTests using Java 1.8.0_241 on dalluos-mbp with PID 17752 (started by dal in /Users/dalluo/Desktop/IdeaProjects/communityApp)
+2022-04-20 14:59:51.194 [main] INFO  c.b.communityApp.CommunityappApplicationTests - No active profile set, falling back to 1 default profile: "default"
+2022-04-20 14:59:53.574 [main] INFO  c.b.communityApp.CommunityappApplicationTests - Started CommunityappApplicationTests in 2.67 seconds (JVM running for 3.631)
+2022-04-20 15:29:01.898 [main] INFO  c.b.communityApp.CommunityappApplicationTests - Starting CommunityappApplicationTests using Java 1.8.0_241 on dalluos-mbp with PID 18029 (started by dal in /Users/dalluo/Desktop/IdeaProjects/communityApp)
+2022-04-20 15:29:01.900 [main] INFO  c.b.communityApp.CommunityappApplicationTests - No active profile set, falling back to 1 default profile: "default"
+2022-04-20 15:29:04.530 [main] INFO  c.b.communityApp.CommunityappApplicationTests - Started CommunityappApplicationTests in 2.936 seconds (JVM running for 3.969)

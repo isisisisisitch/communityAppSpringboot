@@ -168,3 +168,9 @@
 2022-04-20 12:53:42.620 [http-nio-8080-exec-3] DEBUG c.b.communityApp.dao.ProductDao.queryProductById - ==>  Preparing: SELECT p.product_id, p.product_name, p.product_desc, p.img_addr, p.normal_price, p.promotion_price, p.priority, p.create_time, p.last_edit_time, p.enable_status, p.point, p.product_category_id, p.shop_id, pm.product_img_id, pm.img_addr AS detail_img, pm.img_desc, pm.priority, pm.create_time FROM tb_product p LEFT JOIN tb_product_img pm ON p.product_id = pm.product_id WHERE p.product_id = ? ORDER BY pm.priority DESC
 2022-04-20 12:53:42.620 [http-nio-8080-exec-3] DEBUG c.b.communityApp.dao.ProductDao.queryProductById - ==> Parameters: 1(Long)
 2022-04-20 12:53:42.653 [http-nio-8080-exec-3] DEBUG c.b.communityApp.dao.ProductDao.queryProductById - <==      Total: 1
+2022-04-20 14:50:45.217 [main] DEBUG ca.bytetube.communityApp.CommunityappApplication - Running with Spring Boot v2.6.6, Spring v5.3.18
+2022-04-20 14:52:31.017 [main] DEBUG c.b.communityApp.CommunityappApplicationTests - Running with Spring Boot v2.6.6, Spring v5.3.18
+2022-04-20 14:53:14.734 [main] DEBUG c.b.communityApp.CommunityappApplicationTests - Running with Spring Boot v2.6.6, Spring v5.3.18
+2022-04-20 14:55:53.840 [main] DEBUG c.b.communityApp.CommunityappApplicationTests - Running with Spring Boot v2.6.6, Spring v5.3.18
+2022-04-20 14:59:51.193 [main] DEBUG c.b.communityApp.CommunityappApplicationTests - Running with Spring Boot v2.6.6, Spring v5.3.18
+2022-04-20 15:29:01.899 [main] DEBUG c.b.communityApp.CommunityappApplicationTests - Running with Spring Boot v2.6.6, Spring v5.3.18

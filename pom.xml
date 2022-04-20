@@ -6,6 +6,7 @@
     <groupId>ca.bytetube</groupId>
     <artifactId>communityApp</artifactId>
     <version>0.0.1-SNAPSHOT</version>
+    <packaging>war</packaging>
     <name>communityApp</name>
 
     <parent>
