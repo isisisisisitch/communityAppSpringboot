@@ -47,4 +47,16 @@ public class ShopAdminController {
 		return "shop/productmanagement";
 	}
 
+	@RequestMapping(value = "/shopauthmanagement")
+	public String shopAuthManagement() {
+		// 转发至店铺授权页面
+		return "shop/shopauthmanagement";
+	}
+
+	@RequestMapping(value = "/shopauthedit")
+	public String shopAuthEdit() {
+		// 转发至授权信息修改页面
+		return "shop/shopauthedit";
+	}
+
 }
