@@ -88,3 +88,25 @@
 2022-04-27 15:12:13.791 [http-nio-80-exec-2] DEBUG c.b.c.d.ShopAuthMapDao.queryShopAuthCountByShopId - ==>  Preparing: SELECT count(1) FROM tb_shop_auth_map smap, tb_person_info p, tb_shop s WHERE smap.employee_id = p.user_id AND smap.shop_id = s.shop_id AND smap.shop_id = ?
 2022-04-27 15:12:13.791 [http-nio-80-exec-2] DEBUG c.b.c.d.ShopAuthMapDao.queryShopAuthCountByShopId - ==> Parameters: 1(Long)
 2022-04-27 15:12:13.828 [http-nio-80-exec-2] DEBUG c.b.c.d.ShopAuthMapDao.queryShopAuthCountByShopId - <==      Total: 1
+2022-04-27 15:21:43.152 [main] DEBUG ca.bytetube.communityApp.CommunityappApplication - Running with Spring Boot v2.6.6, Spring v5.3.18
+2022-04-27 15:22:05.337 [http-nio-80-exec-1] DEBUG c.b.c.dao.LocalAuthDao.queryLocalByUserNameAndPwd - ==>  Preparing: SELECT l.local_auth_id, l.user_name, l.password, l.create_time, l.last_edit_time, p.user_id, p.name, p.gender, p.email, p.profile_img, p.user_type, p.create_time, p.last_edit_time, p.enable_status FROM tb_local_auth l LEFT JOIN tb_person_info p ON l.user_id = p.user_id WHERE l.user_name = ? AND l.password = ?
+2022-04-27 15:22:05.353 [http-nio-80-exec-1] DEBUG c.b.c.dao.LocalAuthDao.queryLocalByUserNameAndPwd - ==> Parameters: bytetube(String), s6esl9550b5b0ysbbs505q6s2992565s(String)
+2022-04-27 15:22:05.396 [http-nio-80-exec-1] DEBUG c.b.c.dao.LocalAuthDao.queryLocalByUserNameAndPwd - <==      Total: 1
+2022-04-27 15:22:05.650 [http-nio-80-exec-1] DEBUG ca.bytetube.communityApp.dao.ShopDao.queryShopList - ==>  Preparing: SELECT s.shop_id, s.shop_name, s.shop_desc, s.shop_addr, s.phone, s.shop_img, s.priority, s.create_time, s.last_edit_time, s.enable_status, s.advice, a.area_id, a.area_name, sc.shop_category_id, sc.shop_category_name FROM tb_shop s, tb_area a, tb_shop_category sc WHERE s.owner_id = ? AND s.area_id=a.area_id AND s.shop_category_id = sc.shop_category_id ORDER BY s.priority DESC LIMIT ?,?;
+2022-04-27 15:22:05.651 [http-nio-80-exec-1] DEBUG ca.bytetube.communityApp.dao.ShopDao.queryShopList - ==> Parameters: 1(Long), 0(Integer), 100(Integer)
+2022-04-27 15:22:05.696 [http-nio-80-exec-1] DEBUG ca.bytetube.communityApp.dao.ShopDao.queryShopList - <==      Total: 23
+2022-04-27 15:22:05.697 [http-nio-80-exec-1] DEBUG c.bytetube.communityApp.dao.ShopDao.queryShopCount - ==>  Preparing: SELECT count(1) FROM tb_shop s, tb_area a, tb_shop_category sc WHERE s.owner_id = ? AND s.area_id=a.area_id AND s.shop_category_id = sc.shop_category_id
+2022-04-27 15:22:05.697 [http-nio-80-exec-1] DEBUG c.bytetube.communityApp.dao.ShopDao.queryShopCount - ==> Parameters: 1(Long)
+2022-04-27 15:22:05.730 [http-nio-80-exec-1] DEBUG c.bytetube.communityApp.dao.ShopDao.queryShopCount - <==      Total: 1
+2022-04-27 15:22:12.781 [http-nio-80-exec-1] DEBUG c.b.c.d.S.queryShopAuthMapListByShopId - ==>  Preparing: SELECT smap.shop_auth_id, smap.title, smap.title_flag, smap.create_time, smap.last_edit_time, smap.enable_status, p.user_id, p.name, s.shop_id, s.shop_name FROM tb_shop_auth_map smap, tb_person_info p, tb_shop s WHERE smap.employee_id = p.user_id AND smap.shop_id = s.shop_id AND smap.shop_id = ? LIMIT ?,?;
+2022-04-27 15:22:12.781 [http-nio-80-exec-1] DEBUG c.b.c.d.S.queryShopAuthMapListByShopId - ==> Parameters: 1(Long), 0(Integer), 9999(Integer)
+2022-04-27 15:22:12.824 [http-nio-80-exec-1] DEBUG c.b.c.d.S.queryShopAuthMapListByShopId - <==      Total: 2
+2022-04-27 15:22:12.824 [http-nio-80-exec-1] DEBUG c.b.c.d.ShopAuthMapDao.queryShopAuthCountByShopId - ==>  Preparing: SELECT count(1) FROM tb_shop_auth_map smap, tb_person_info p, tb_shop s WHERE smap.employee_id = p.user_id AND smap.shop_id = s.shop_id AND smap.shop_id = ?
+2022-04-27 15:22:12.824 [http-nio-80-exec-1] DEBUG c.b.c.d.ShopAuthMapDao.queryShopAuthCountByShopId - ==> Parameters: 1(Long)
+2022-04-27 15:22:12.861 [http-nio-80-exec-1] DEBUG c.b.c.d.ShopAuthMapDao.queryShopAuthCountByShopId - <==      Total: 1
+2022-04-27 15:30:38.737 [main] DEBUG c.b.communityApp.CommunityappApplicationTests - Running with Spring Boot v2.6.6, Spring v5.3.18
+2022-04-27 15:40:01.744 [main] DEBUG c.b.communityApp.CommunityappApplicationTests - Running with Spring Boot v2.6.6, Spring v5.3.18
+2022-04-27 15:47:59.712 [main] DEBUG ca.bytetube.communityApp.CommunityappApplication - Running with Spring Boot v2.6.6, Spring v5.3.18
+2022-04-27 16:24:59.548 [main] DEBUG c.b.communityApp.CommunityappApplicationTests - Running with Spring Boot v2.6.6, Spring v5.3.18
+2022-04-27 16:42:48.761 [main] DEBUG c.b.communityApp.CommunityappApplicationTests - Running with Spring Boot v2.6.6, Spring v5.3.18
+2022-04-27 16:49:05.036 [main] DEBUG c.b.communityApp.CommunityappApplicationTests - Running with Spring Boot v2.6.6, Spring v5.3.18
