@@ -1,3 +1,9 @@
 2022-04-27 12:10:08.755 [main] INFO  ca.bytetube.communityApp.CommunityappApplication - Starting CommunityappApplication using Java 1.8.0_241 on dalluos-mbp with PID 35306 (/Users/dalluo/Desktop/IdeaProjects/communityApp/target/classes started by dal in /Users/dalluo/Desktop/IdeaProjects/communityApp)
 2022-04-27 12:10:08.761 [main] INFO  ca.bytetube.communityApp.CommunityappApplication - No active profile set, falling back to 1 default profile: "default"
 2022-04-27 12:10:10.642 [main] INFO  ca.bytetube.communityApp.CommunityappApplication - Started CommunityappApplication in 2.249 seconds (JVM running for 2.89)
+2022-04-27 15:09:41.730 [main] INFO  ca.bytetube.communityApp.CommunityappApplication - Starting CommunityappApplication using Java 1.8.0_241 on dalluos-mbp with PID 35885 (/Users/dalluo/Desktop/IdeaProjects/communityApp/target/classes started by dal in /Users/dalluo/Desktop/IdeaProjects/communityApp)
+2022-04-27 15:09:41.733 [main] INFO  ca.bytetube.communityApp.CommunityappApplication - No active profile set, falling back to 1 default profile: "default"
+2022-04-27 15:09:43.427 [main] INFO  ca.bytetube.communityApp.CommunityappApplication - Started CommunityappApplication in 1.974 seconds (JVM running for 2.455)
+2022-04-27 15:11:27.197 [main] INFO  ca.bytetube.communityApp.CommunityappApplication - Starting CommunityappApplication using Java 1.8.0_241 on dalluos-mbp with PID 35898 (/Users/dalluo/Desktop/IdeaProjects/communityApp/target/classes started by dal in /Users/dalluo/Desktop/IdeaProjects/communityApp)
+2022-04-27 15:11:27.200 [main] INFO  ca.bytetube.communityApp.CommunityappApplication - No active profile set, falling back to 1 default profile: "default"
+2022-04-27 15:11:29.015 [main] INFO  ca.bytetube.communityApp.CommunityappApplication - Started CommunityappApplication in 2.184 seconds (JVM running for 2.844)
